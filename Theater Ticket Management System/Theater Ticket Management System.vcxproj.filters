@@ -13,6 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\View">
+      <UniqueIdentifier>{f72230f6-56c3-4cae-9fd0-2f79348aa0ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\View">
+      <UniqueIdentifier>{87ccf21b-e424-4dc5-a166-969dbbc7e39b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Persistent">
+      <UniqueIdentifier>{21c15258-aa8b-4718-8d15-c88f2e78fd27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Persistent">
+      <UniqueIdentifier>{9abc5660-47a7-42a1-80dd-17b598b2886e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Service">
+      <UniqueIdentifier>{e767b821-716c-42da-ad2b-cdc949da2917}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Other">
+      <UniqueIdentifier>{392d75bc-3897-4b9c-8f0a-0c43985aa88c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Service">
+      <UniqueIdentifier>{0ba434b4-b1a8-4c31-ba6a-d259be2ef5bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Other">
+      <UniqueIdentifier>{95306d63-9c59-436c-b6b2-faee0bb19f59}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -24,13 +48,142 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="TTMS_GotoXY.h">
+      <Filter>头文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="BIOS_GOTO_BOX.h">
+      <Filter>头文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="GET_KEY.h">
+      <Filter>头文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="INPUT_ACCOUT.h">
+      <Filter>头文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="INPUT_PASSWORD.h">
+      <Filter>头文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="GET_XY.h">
+      <Filter>头文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="GET_OC.h">
+      <Filter>头文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_INITIAL.h">
+      <Filter>头文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="USER_INFORMATION.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Login.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_PD_STATE.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_Srv_InitSys.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_UI_InitSys.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_Perst_CheckAccFile.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_Srv_Add.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_Srv_Vertify.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_Prest_Insert.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_Srv_FetchAll.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_UI_MgtEnt.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_Srv_FetchByAcc.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_UI_Add.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="CREAT_LIST_HEAD_USER.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Theater Ticket Management System.cpp">
+    <ClCompile Include="BIOS_GOTO_BOX.cpp">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="GET_KEY.cpp">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="GET_XY.cpp">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="INPUT_ACCOUT.cpp">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="INPUT_PASSWORD.cpp">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_GotoXY.cpp">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_INITIAL.cpp">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="GET_OC.cpp">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_PD_STATE.cpp">
+      <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_Srv_InitSys.cpp">
+      <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_Perst_CheckAccFile.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_UI_InitSys.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_Prest_Insert.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_Srv_Add.cpp">
+      <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_Srv_Vertify.cpp">
+      <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_Srv_FetchAll.cpp">
+      <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_Srv_FetchByAcc.cpp">
+      <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_UI_MgtEnt.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Login.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_UI_Add.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="CREAT_LIST_HEAD_USER.cpp">
+      <Filter>源文件\Service</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

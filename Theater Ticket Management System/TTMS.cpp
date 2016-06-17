@@ -6,6 +6,14 @@
 
 int main()
 {
+	if (pd_state() == 1)
+	{
+		SysLogin();
+	}
+	else
+	{
+		Account_UI_InitSys();
+	}
     return 0;
 }
 
