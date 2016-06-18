@@ -156,19 +156,22 @@
     <ClInclude Include="targetver.h" />
     <ClInclude Include="TTMS_GotoXY.h" />
     <ClInclude Include="TTMS_INITIAL.h" />
-    <ClInclude Include="TTMS_PD_STATE.h" />
     <ClInclude Include="TTMS_SCU_Account_Perst_CheckAccFile.h" />
+    <ClInclude Include="TTMS_SCU_Account_Perst_CheckAccout.h" />
     <ClInclude Include="TTMS_SCU_Account_Prest_Insert.h" />
     <ClInclude Include="TTMS_SCU_Account_Srv_Add.h" />
+    <ClInclude Include="TTMS_SCU_Account_Srv_Back.h" />
     <ClInclude Include="TTMS_SCU_Account_Srv_FetchAll.h" />
     <ClInclude Include="TTMS_SCU_Account_Srv_FetchByAcc.h" />
     <ClInclude Include="TTMS_SCU_Account_Srv_InitSys.h" />
     <ClInclude Include="TTMS_SCU_Account_Srv_Vertify.h" />
+    <ClInclude Include="TTMS_SCU_Account_UI_Browe.h" />
     <ClInclude Include="TTMS_SCU_Account_UI_InitSys.h" />
+    <ClInclude Include="TTMS_SCU_Account_UI_BoByPage.h" />
     <ClInclude Include="TTMS_SCU_Account_UI_MgtEnt.h" />
     <ClInclude Include="TTMS_SCU_Login.h" />
-    <ClInclude Include="TTMS_SCU_UI_Add.h" />
-    <ClInclude Include="USER_INFORMATION.h" />
+    <ClInclude Include="TTMS_SCU_Account_UI_Add.h" />
+    <ClInclude Include="TTMS_SCU_Account_Srv_Infor.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BIOS_GOTO_BOX.cpp" />
@@ -187,18 +190,21 @@
     <ClCompile Include="TTMS.cpp" />
     <ClCompile Include="TTMS_GotoXY.cpp" />
     <ClCompile Include="TTMS_INITIAL.cpp" />
-    <ClCompile Include="TTMS_PD_STATE.cpp" />
     <ClCompile Include="TTMS_SCU_Account_Perst_CheckAccFile.cpp" />
+    <ClCompile Include="TTMS_SCU_Account_Perst_CheckAccout.cpp" />
     <ClCompile Include="TTMS_SCU_Account_Prest_Insert.cpp" />
     <ClCompile Include="TTMS_SCU_Account_Srv_Add.cpp" />
+    <ClCompile Include="TTMS_SCU_Account_Srv_Back.cpp" />
     <ClCompile Include="TTMS_SCU_Account_Srv_FetchAll.cpp" />
     <ClCompile Include="TTMS_SCU_Account_Srv_FetchByAcc.cpp" />
     <ClCompile Include="TTMS_SCU_Account_Srv_InitSys.cpp" />
     <ClCompile Include="TTMS_SCU_Account_Srv_Vertify.cpp" />
+    <ClCompile Include="TTMS_SCU_Account_UI_BoByPage.cpp" />
+    <ClCompile Include="TTMS_SCU_Account_UI_Browe.cpp" />
     <ClCompile Include="TTMS_SCU_Account_UI_InitSys.cpp" />
     <ClCompile Include="TTMS_SCU_Account_UI_MgtEnt.cpp" />
     <ClCompile Include="TTMS_SCU_Login.cpp" />
-    <ClCompile Include="TTMS_SCU_UI_Add.cpp" />
+    <ClCompile Include="TTMS_SCU_Account_UI_Add.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

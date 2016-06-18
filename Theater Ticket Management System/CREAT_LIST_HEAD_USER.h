@@ -1,2 +1,2 @@
 #pragma once
-void CREAT_LIST_HEAD_USER(USER *HEAD);
+USER* CREAT_LIST_HEAD_USER();

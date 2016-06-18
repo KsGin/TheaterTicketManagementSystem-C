@@ -6,7 +6,7 @@
 
 int main()
 {
-	if (pd_state() == 1)
+	if (Account_Perst_CheckAccFile() == 1)
 	{
 		SysLogin();
 	}

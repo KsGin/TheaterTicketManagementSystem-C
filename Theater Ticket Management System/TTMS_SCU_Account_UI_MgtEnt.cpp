@@ -28,11 +28,11 @@ void Account_UI_MgtEntry(USER *user)
 		{
 			switch (GET_CURSOR_Y())
 			{
-			case 9: Account_UI_Add();
+			case 9: Account_UI_Add(user); break;
 			case 11:
 			case 13:
 			case 15:
-			case 17:
+			case 17:Account_UI_Browe(user); break;
 			default:
 				break;
 			}

@@ -19,7 +19,7 @@ void SysLogin()
 	INPUT_ACCOUT(useraccount, USER_LEN);
 	TTMS_GotoXY(56, 13);
 	INPUT_PASSWORD(userpassword, USER_LEN);
-	if (Account_Perst_CheckAccFile(useraccount) == 0)
+	if (Account_Perst_CheckAccout(useraccount) == 0)
 	{
 		TTMS_GotoXY(52, 18);
 		printf_s("没有找到此账号！");

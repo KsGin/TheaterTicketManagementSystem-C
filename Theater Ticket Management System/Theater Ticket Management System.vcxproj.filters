@@ -72,23 +72,14 @@
     <ClInclude Include="TTMS_INITIAL.h">
       <Filter>头文件\Other</Filter>
     </ClInclude>
-    <ClInclude Include="USER_INFORMATION.h">
-      <Filter>头文件\Service</Filter>
-    </ClInclude>
     <ClInclude Include="TTMS_SCU_Login.h">
       <Filter>头文件\View</Filter>
-    </ClInclude>
-    <ClInclude Include="TTMS_PD_STATE.h">
-      <Filter>头文件\Service</Filter>
     </ClInclude>
     <ClInclude Include="TTMS_SCU_Account_Srv_InitSys.h">
       <Filter>头文件\Service</Filter>
     </ClInclude>
     <ClInclude Include="TTMS_SCU_Account_UI_InitSys.h">
       <Filter>头文件\View</Filter>
-    </ClInclude>
-    <ClInclude Include="TTMS_SCU_Account_Perst_CheckAccFile.h">
-      <Filter>头文件\Persistent</Filter>
     </ClInclude>
     <ClInclude Include="TTMS_SCU_Account_Srv_Add.h">
       <Filter>头文件\Service</Filter>
@@ -108,11 +99,29 @@
     <ClInclude Include="TTMS_SCU_Account_Srv_FetchByAcc.h">
       <Filter>头文件\Service</Filter>
     </ClInclude>
-    <ClInclude Include="TTMS_SCU_UI_Add.h">
-      <Filter>头文件\View</Filter>
-    </ClInclude>
     <ClInclude Include="CREAT_LIST_HEAD_USER.h">
       <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_UI_Browe.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_Perst_CheckAccout.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_Perst_CheckAccFile.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_Srv_Back.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_UI_Add.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_Srv_Infor.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_UI_BoByPage.h">
+      <Filter>头文件\View</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -143,14 +152,8 @@
     <ClCompile Include="GET_OC.cpp">
       <Filter>源文件\Other</Filter>
     </ClCompile>
-    <ClCompile Include="TTMS_PD_STATE.cpp">
-      <Filter>源文件\Service</Filter>
-    </ClCompile>
     <ClCompile Include="TTMS_SCU_Account_Srv_InitSys.cpp">
       <Filter>源文件\Service</Filter>
-    </ClCompile>
-    <ClCompile Include="TTMS_SCU_Account_Perst_CheckAccFile.cpp">
-      <Filter>源文件\Persistent</Filter>
     </ClCompile>
     <ClCompile Include="TTMS_SCU_Account_UI_InitSys.cpp">
       <Filter>源文件\View</Filter>
@@ -179,11 +182,26 @@
     <ClCompile Include="TTMS_SCU_Login.cpp">
       <Filter>源文件\View</Filter>
     </ClCompile>
-    <ClCompile Include="TTMS_SCU_UI_Add.cpp">
-      <Filter>源文件\View</Filter>
-    </ClCompile>
     <ClCompile Include="CREAT_LIST_HEAD_USER.cpp">
       <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_UI_Browe.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_Perst_CheckAccout.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_Perst_CheckAccFile.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_UI_Add.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_Srv_Back.cpp">
+      <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_UI_BoByPage.cpp">
+      <Filter>源文件\View</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

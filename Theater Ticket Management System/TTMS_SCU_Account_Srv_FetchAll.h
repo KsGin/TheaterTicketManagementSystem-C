@@ -1,2 +1,2 @@
 #pragma once
-void Account_Srv_FetchAll(USER *HEAD);
+USER* Account_Srv_FetchAll();

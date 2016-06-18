@@ -1,27 +1,16 @@
 #include "stdafx.h"
-#include "TTMS_SCU_Account_Perst_CheckAccFile.h"
 
-int Account_Perst_CheckAccFile(char useraccount[])
+int Account_Perst_CheckAccFile()
 {
-	FILE *fp;
-	USER *TEMP;
 	errno_t err;
-	err = fopen_s(&fp, "Account.dat", "rb+");
-	if (err != 0)
-	{
-		printf_s("´íÎó:·µ»Ø%d", err);
+	FILE *fp;
+	if (err = fopen_s(&fp, "Account.dat", "rb") == 0) {
+		fclose(fp);
+		return 1;
 	}
-	fseek(fp, 0, SEEK_SET);
-	while (feof(fp) == 0)
+	else
 	{
-		TEMP = (USER *)malloc(sizeof(USER));
-		fread(TEMP, sizeof(USER), 1, fp);
-		if (strcmp(useraccount,TEMP->USER_ACCOUT) == 0)
-		{
-			fclose(fp);
-			return 1;
-		}
-	} 
-	fclose(fp);
+		return 0;
+	}
 	return 0;
 }
