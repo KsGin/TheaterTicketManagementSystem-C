@@ -9,7 +9,7 @@ USER* CREAT_LIST_HEAD_USER() {
 	strcpy_s(HEAD->USER_NAME, USER_LEN, "");
 	strcpy_s(HEAD->USER_ACCOUT, USER_LEN, "");
 	strcpy_s(HEAD->USER_PASSWORD, USER_LEN, "");
-	HEAD->power = 0;
+	HEAD->power = -1;
 	return HEAD;
 }
 

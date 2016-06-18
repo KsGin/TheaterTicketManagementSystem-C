@@ -34,7 +34,7 @@ int Account_UI_BoByPage( int NumberMin,int NumberMax,USER *Head)
 	{
 		if (TEMP->NODE_NEXT == Head)
 		{
-			return Count % 5;
+			return 1;
 		}
 		TTMS_GotoXY(30, 9 + 3 * (Count - NumberMin));
 		printf_s("%s", TEMP->USER_NAME);
@@ -45,10 +45,15 @@ int Account_UI_BoByPage( int NumberMin,int NumberMax,USER *Head)
 		{
 		case 0:printf_s("系统管理员"); break;
 		case 1:printf_s("售票经理"); break;
+		case 2:printf_s("售票员"); break;
 		}
 		TTMS_GotoXY(50, 26);
 		Count++;
 		TEMP = TEMP->NODE_NEXT;
+	}
+	if (TEMP->NODE_NEXT == Head)
+	{
+		return 1;
 	}
 	return 0;
 }

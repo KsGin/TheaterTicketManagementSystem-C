@@ -37,4 +37,7 @@
 #include "TTMS_SCU_Account_UI_Browe.h"
 #include "TTMS_SCU_Account_Srv_Back.h"
 #include "TTMS_SCU_Account_UI_BoByPage.h"
+#include "TTMS_SCU_Account_UI_Del.h"
+#include "TTMS_SCU_Account_Srv_DelByID.h"
+#include "TTMS_SCU_Account_perst_Update.h"
 // TODO:  在此处引用程序需要的其他头文件
