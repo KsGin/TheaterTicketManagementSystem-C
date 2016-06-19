@@ -1,7 +1,7 @@
 #include "stdafx.h"
-#include "TTMS_SCU_Account_UI_Del.h"
+#include "TTMS_SCU_Account_UI_DelByN.h"
 
-void Account_UI_Delete(USER * user)
+void Account_UI_DeleteByName(USER * user)
 {
 	system("cls");
 	BIOS_GOTO_BOX(22, 100, 5, 25);
@@ -16,7 +16,9 @@ void Account_UI_Delete(USER * user)
 	scanf_s("%s",delname,USER_LEN);
 	if (Account_Perst_CheckAccout(delname) == 1)
 	{
-		Account_Srv_DelByID(delname);
+		USER *user = Account_Perst_FetchByName(delname);
+		printf_s("%s", user->USER_NAME);
+		Account_Perst_DelByName(delname);
 		TTMS_GotoXY(52, 18);
 		printf_s("É¾³ý³É¹¦");
 		Account_Srv_Back(user);
@@ -34,6 +36,6 @@ void Account_UI_Delete(USER * user)
 	}
 	else
 	{
-		Account_UI_Delete(user);
+		Account_UI_DeleteByName(user);
 	}
 }

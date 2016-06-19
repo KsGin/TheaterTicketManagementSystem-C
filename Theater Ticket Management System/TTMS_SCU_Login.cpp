@@ -32,11 +32,11 @@ void SysLogin()
 		int flag = Account_Srv_Verify(useraccount, userpassword);
 		if (flag == 1)
 		{
-			USER *user = Account_Srv_FetchByAccount(useraccount);
+			USER *user = Account_Perst_FetchByAccount(useraccount);
 			TTMS_GotoXY(55, 20);
 			printf_s("µÇÂ½³É¹¦");
 			TTMS_GotoXY(52, 22);
-			Account_UI_MgtEntry(user);
+			Main_UI_MgtEntry(user);
 		}
 		if (flag == 0)
 		{

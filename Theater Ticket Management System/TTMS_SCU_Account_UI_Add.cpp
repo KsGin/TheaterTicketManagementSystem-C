@@ -56,8 +56,8 @@ void Account_UI_Add(USER *Admini)
 			Account_UI_Add(Admini);
 		}
 	}
-	user->NODE_NEXT = NULL;
-	user->NODE_PREV = NULL;
+	user->NODE_NEXT = nullptr;
+	user->NODE_PREV = nullptr;
 	Account_Perst_Insert(user);
 	TTMS_GotoXY(55, 20);
 	printf_s("增加成功");

@@ -93,12 +93,6 @@
     <ClInclude Include="TTMS_SCU_Account_Srv_FetchAll.h">
       <Filter>头文件\Service</Filter>
     </ClInclude>
-    <ClInclude Include="TTMS_SCU_Account_UI_MgtEnt.h">
-      <Filter>头文件\View</Filter>
-    </ClInclude>
-    <ClInclude Include="TTMS_SCU_Account_Srv_FetchByAcc.h">
-      <Filter>头文件\Service</Filter>
-    </ClInclude>
     <ClInclude Include="CREAT_LIST_HEAD_USER.h">
       <Filter>头文件\Service</Filter>
     </ClInclude>
@@ -123,13 +117,67 @@
     <ClInclude Include="TTMS_SCU_Account_UI_BoByPage.h">
       <Filter>头文件\View</Filter>
     </ClInclude>
-    <ClInclude Include="TTMS_SCU_Account_UI_Del.h">
-      <Filter>头文件\View</Filter>
-    </ClInclude>
     <ClInclude Include="TTMS_SCU_Account_Srv_DelByID.h">
       <Filter>头文件\Service</Filter>
     </ClInclude>
     <ClInclude Include="TTMS_SCU_Account_perst_Update.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Main_UI_MgtEnt.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_UI_MgtEnt.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Studio_UI_MgtEnt.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Studio_UI_Add.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Studio_Srv_Infor.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_EntKey_Srv_CompNewKey.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_EntKey_Perst_CompNewKeys.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Studio_Perst_Insert.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Studio_Srv_Add.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Studio_UI_DelByID.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Studio_Perst_FetchByID.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Studio_Perst_DelByID.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Studio_Perst_CompKeyP.h">
+      <Filter>源文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Studio_Perst_CompKeyM.h">
+      <Filter>源文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_Perst_DelByAcc.h">
+      <Filter>源文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_Perst_DelByName.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_UI_DelByN.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_Perst_FetchByAcc.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_Perst_FetchByName.h">
       <Filter>头文件\Persistent</Filter>
     </ClInclude>
   </ItemGroup>
@@ -182,12 +230,6 @@
     <ClCompile Include="TTMS_SCU_Account_Srv_FetchAll.cpp">
       <Filter>源文件\Service</Filter>
     </ClCompile>
-    <ClCompile Include="TTMS_SCU_Account_Srv_FetchByAcc.cpp">
-      <Filter>源文件\Service</Filter>
-    </ClCompile>
-    <ClCompile Include="TTMS_SCU_Account_UI_MgtEnt.cpp">
-      <Filter>源文件\View</Filter>
-    </ClCompile>
     <ClCompile Include="TTMS_SCU_Login.cpp">
       <Filter>源文件\View</Filter>
     </ClCompile>
@@ -212,14 +254,62 @@
     <ClCompile Include="TTMS_SCU_Account_UI_BoByPage.cpp">
       <Filter>源文件\View</Filter>
     </ClCompile>
-    <ClCompile Include="TTMS_SCU_Account_UI_Del.cpp">
-      <Filter>源文件\View</Filter>
-    </ClCompile>
     <ClCompile Include="TTMS_SCU_Account_perst_Update.cpp">
       <Filter>源文件\Persistent</Filter>
     </ClCompile>
     <ClCompile Include="TTMS_SCU_Account_Srv_DelByID.cpp">
       <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Main_UI_MgtEnt.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_UI_MgtEnt.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Studio_UI_MgtEnt.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_EntKey_Srv_CompNewKey.cpp">
+      <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_EntKey_Perst_CompNewKeys.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Studio_UI_Add.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_UI_DelByN.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_Perst_FetchByAcc.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_Perst_DelByName.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_Perst_FetchByName.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Studio_Perst_CompKeyM.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Studio_Perst_CompKeyP.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Studio_Perst_DelByID.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Studio_Perst_FetchByID.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Studio_Perst_Insert.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Studio_Srv_Add.cpp">
+      <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Studio_UI_DelByID.cpp">
+      <Filter>源文件\View</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

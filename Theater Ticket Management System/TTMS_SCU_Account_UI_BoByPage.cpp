@@ -32,7 +32,7 @@ int Account_UI_BoByPage( int NumberMin,int NumberMax,USER *Head)
 	Count = NumberMin;
 	while (Count < NumberMax)
 	{
-		if (TEMP->NODE_NEXT == Head)
+		if (TEMP->NODE_NEXT == Head && TEMP)
 		{
 			return 1;
 		}

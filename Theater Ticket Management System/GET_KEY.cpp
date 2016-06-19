@@ -15,9 +15,9 @@ char* GET_KEY() { // 获得上下左右	esc 退格 enter等特殊键位 数字字母请使用getch
 		case 20704:return "Down"; break;
 		case 19424:return "Left"; break;
 		case 19936:return "Right"; break;
-		default: return NULL;
+		default: return nullptr;
 			break;
 		}
 	}
-	return NULL;
+	return nullptr;
 }

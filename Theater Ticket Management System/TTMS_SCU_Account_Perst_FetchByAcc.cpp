@@ -1,7 +1,7 @@
 #include "stdafx.h"
-#include "TTMS_SCU_Account_Srv_FetchByAcc.h"
+#include "TTMS_SCU_Account_Perst_FetchByAcc.h"
 
-USER * Account_Srv_FetchByAccount(char useraccount[])
+USER * Account_Perst_FetchByAccount(char useraccount[])
 {
 	FILE *fp;
 	USER *TEMP;

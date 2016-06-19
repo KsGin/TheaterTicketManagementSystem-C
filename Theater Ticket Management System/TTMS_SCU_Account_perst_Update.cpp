@@ -5,12 +5,10 @@ int Account_Perst_Update(USER * Head)
 {
 	USER *User = Head;
 	FILE *fp;
-	int count = 0;
 	fopen_s(&fp, "Account.dat", "wb+");
 	fseek(fp, 0, SEEK_SET);
-	while (User != Head)
+	while (User->NODE_NEXT != Head)
 	{
-		count++;
 		fwrite(User, sizeof(USER), 1, fp);
 		User = User->NODE_NEXT;
 	}

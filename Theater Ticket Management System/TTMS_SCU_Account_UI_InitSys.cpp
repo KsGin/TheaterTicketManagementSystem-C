@@ -35,6 +35,6 @@ void Account_UI_InitSys()
 		system("cls");
 		TTMS_INITIAL();
 		Account_Srv_InitSys(useraccount, username, userpassword, password);
-		Account_UI_MgtEntry(Account_Srv_FetchByAccount(useraccount));
+		Main_UI_MgtEntry(Account_Perst_FetchByAccount(useraccount));
 	}
 }
