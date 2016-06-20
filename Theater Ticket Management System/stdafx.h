@@ -62,4 +62,7 @@
 #include "TTMS_SCU_Studio_UI_Browe.h"
 #include "TTMS_SCU_Studio_UI_LookByP.h"
 #include "TTMS_SCU_Studio_Srv_FetchById.h"
+#include "TTMS_SCU_Studio_UI_Mod.h"
+#include "TTMS_SCU_Studio_Srv_Mod.h"
+#include "TTMS_SCU_Studio_Perst_Mod.h"
 // TODO:  在此处引用程序需要的其他头文件

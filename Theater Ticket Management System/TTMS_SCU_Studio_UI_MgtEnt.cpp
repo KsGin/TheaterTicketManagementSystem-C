@@ -28,7 +28,7 @@ void Studio_UI_MgtEntry(USER * user)
 		switch (GET_CURSOR_Y())
 		{
 		case 9: Studio_UI_add(user); break;
-		case 11: break;
+		case 11:Studio_UI_Mod(user); break;
 		case 13:Studio_UI_Delete(user); break;
 		case 15:
 		case 17:Studio_UI_Browe(user); break;
