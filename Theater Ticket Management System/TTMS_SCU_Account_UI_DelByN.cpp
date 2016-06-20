@@ -17,7 +17,6 @@ void Account_UI_DeleteByName(USER * user)
 	if (Account_Perst_CheckAccout(delname) == 1)
 	{
 		USER *user = Account_Perst_FetchByName(delname);
-		printf_s("%s", user->USER_NAME);
 		Account_Perst_DelByName(delname);
 		TTMS_GotoXY(52, 18);
 		printf_s("É¾³ý³É¹¦");

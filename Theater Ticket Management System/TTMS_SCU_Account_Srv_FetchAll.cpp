@@ -8,7 +8,7 @@ USER* Account_Srv_FetchAll()
 	HEAD = CREAT_LIST_HEAD_USER();
 	TEMP_NODE = HEAD;
 	fopen_s(&USER_READ_FP, "Account.dat", "rb");
-	while (feof(USER_READ_FP) == 0)
+	while (!feof(USER_READ_FP))
 	{
 		NEW_NODE = (USER *)malloc(sizeof(USER));
 		fread_s(NEW_NODE, sizeof(USER), sizeof(USER), 1, USER_READ_FP);

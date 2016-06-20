@@ -5,17 +5,23 @@ int Account_Perst_DelByName(char name[])
 {
 	FILE *fp, *tempfp;
 	USER *temp;
+	int flag = 0;
 	fopen_s(&fp, "Account.dat", "rb");
 	fopen_s(&tempfp, "Accounttemp.dat", "wb");
-	while (!feof(fp))
+	while (!feof(fp) && flag == 0)
 	{
+		flag == 0;
 		temp = (USER *)malloc(sizeof(USER));
 		fread_s(temp, sizeof(USER), sizeof(USER), 1, fp);
 		if (strcmp(name,temp->USER_ACCOUT) == 0)
 		{
-			continue;
+			flag = 1;
 		}
-		fwrite(temp, sizeof(USER), 1, tempfp);
+		if (flag == 0)
+		{
+			fwrite(temp, sizeof(USER), 1, tempfp);
+		}
+		
 	}
 	fclose(fp);
 	fclose(tempfp);

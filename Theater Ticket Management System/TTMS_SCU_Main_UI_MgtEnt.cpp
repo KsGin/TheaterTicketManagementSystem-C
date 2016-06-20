@@ -19,20 +19,24 @@ void Main_UI_MgtEntry(USER * user)
 		printf_s("No2:演出厅管理");
 		TTMS_GotoXY(47, 13);
 		printf_s("No3:恢复出厂化");
-		GET_OC(44, 9, 44, 13, 2, 1, "->", 0, 1);
-		switch (GET_CURSOR_Y())
-		{
-		case 9:Account_UI_MgtEntry(user);
-		case 11:Studio_UI_MgtEntry(user);
-		case 13:
-			system("cls");
-			remove("Account.dat");
-			remove("Studio.dat");
-			remove("EntityKey.dat");
-			TTMS_INITIAL();
-			exit(0);
-		default:
-			break;
+		if (GET_OC(44, 9, 44, 13, 2, 1, "->", 0, 1) == 1) {
+			switch (GET_CURSOR_Y())
+			{
+			case 9:Account_UI_MgtEntry(user);
+			case 11:Studio_UI_MgtEntry(user);
+			case 13:
+				system("cls");
+				remove("Account.dat");
+				remove("Studio.dat");
+				remove("EntityKey.dat");
+				TTMS_INITIAL();
+				exit(0);
+			default:
+				break;
+			}
+		}
+		else {
+			SysLogin();
 		}
 	}
 }

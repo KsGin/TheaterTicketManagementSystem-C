@@ -22,7 +22,7 @@ int Account_UI_BoByPage( int NumberMin,int NumberMax,USER *Head)
 	printf_s("职位");
 	TTMS_GotoXY(37, 24);
 	printf_s("Left上一页  Right下一页  Esc返回上一层              PAGE:%d", NumberMin / 5 + 1);
-	USER *TEMP = Head->NODE_NEXT->NODE_NEXT;
+	USER *TEMP = Head->NODE_NEXT;
 	int Count = 0;
 	while (Count < NumberMin)
 	{
