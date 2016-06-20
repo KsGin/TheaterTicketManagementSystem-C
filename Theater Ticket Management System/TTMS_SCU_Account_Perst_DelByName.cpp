@@ -8,16 +8,18 @@ int Account_Perst_DelByName(char name[])
 	temp = (USER *)malloc(sizeof(USER));
 	fopen_s(&fp, "Account.dat", "rb");
 	fopen_s(&tempfp, "Accounttemp.dat", "wb");
-	while (!feof(fp))
+	fseek(fp, 0, SEEK_END);
+	int sizefile = ftell(fp);
+	fseek(fp, 0, SEEK_SET);
+	while (!feof(fp) && ftell(fp) < sizefile)
 	{
-		fread_s(temp, sizeof(USER), sizeof(USER), 1, fp);
-		if (strcmp(name,temp->USER_ACCOUT) != 0)
+		fread(temp,  sizeof(USER), 1, fp);
+		if (strcmp(name,temp->USER_ACCOUT) != 0 )
 		{
 			fwrite(temp, sizeof(USER), 1 , tempfp);
 		}
-		free(temp);
-		temp = (USER *)malloc(sizeof(USER));
 	}
+	free(temp);
 	fclose(fp);
 	fclose(tempfp);
 	remove("Account.dat");

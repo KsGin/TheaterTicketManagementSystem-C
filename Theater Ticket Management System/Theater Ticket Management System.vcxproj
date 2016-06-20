@@ -158,7 +158,6 @@
     <ClInclude Include="TTMS_INITIAL.h" />
     <ClInclude Include="TTMS_SCU_Account_Perst_CheckAccFile.h" />
     <ClInclude Include="TTMS_SCU_Account_Perst_CheckAccout.h" />
-    <ClInclude Include="TTMS_SCU_Account_Perst_DelByAcc.h" />
     <ClInclude Include="TTMS_SCU_Account_Perst_DelByName.h" />
     <ClInclude Include="TTMS_SCU_Account_Perst_FetchByName.h" />
     <ClInclude Include="TTMS_SCU_Account_Perst_ModP.h" />

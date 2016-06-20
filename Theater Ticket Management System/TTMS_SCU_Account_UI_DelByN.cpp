@@ -10,13 +10,12 @@ void Account_UI_DeleteByName(USER * Admini)
 	TTMS_GotoXY(52, 6);
 	printf_s("没人来大剧院");
 	TTMS_GotoXY(43, 9);
-	printf_s("%s您好，请输入要删除的用户ID", Admini->USER_NAME);
+	printf_s("%s您好，请输入要删除的用户名称", Admini->USER_NAME);
 	TTMS_GotoXY(54, 11);
 	char delname[USER_LEN];
 	scanf_s("%s",delname,USER_LEN);
-	if (Account_Perst_CheckAccout(delname) == 1)
+	if (USER *user = Account_Perst_FetchByName(delname))
 	{
-		USER *user = Account_Perst_FetchByName(delname);
 		TTMS_GotoXY(47, 13);
 		printf_s("姓名:%s", user->USER_NAME);
 		TTMS_GotoXY(47, 15);

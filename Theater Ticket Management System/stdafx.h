@@ -53,10 +53,10 @@
 #include "TTMS_SCU_Studio_Perst_DelByID.h"
 #include "TTMS_SCU_Studio_Perst_CompKeyP.h"
 #include "TTMS_SCU_Studio_Perst_CompKeyM.h"
-#include "TTMS_SCU_Account_Perst_DelByAcc.h"
 #include "TTMS_SCU_Account_Perst_FetchByName.h"
 #include "TTMS_SCU_Account_UI_ModP.h"
 #include "TTMS_SCU_Account_Srv_ModP.h"
 #include "TTMS_SCU_Account_Perst_ModP.h"
 #include "TTMS_SCU_Account_UI_QUE.h"
+#include "TTMS_SCU_Account_Perst_DelByName.h"
 // TODO:  在此处引用程序需要的其他头文件

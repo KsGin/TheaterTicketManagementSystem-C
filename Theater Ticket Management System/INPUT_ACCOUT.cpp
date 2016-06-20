@@ -15,8 +15,12 @@ void INPUT_ACCOUT(char ACCOUT[], int N) {
 			}
 			else if (key == 8)
 			{
-				printf_s("\b \b");
-				index_name--;
+				if (index_name >= 1)
+				{
+					printf_s("\b \b");
+					index_name--;
+					username[index_name] = '\0';
+				}
 			}
 		}
 	}

@@ -15,8 +15,12 @@ void INPUT_PASSWORD(char PASSWORD[], int N) {
 			}
 			else if (key == 8)
 			{
-				printf_s("\b \b");
-				index_password--;
+				if (index_password >= 1)
+				{
+					printf_s("\b \b");
+					index_password--;
+					userpassword[index_password] = '\0';
+				}
 			}
 		}
 	}

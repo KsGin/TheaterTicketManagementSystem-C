@@ -165,9 +165,6 @@
     <ClInclude Include="TTMS_SCU_Studio_Perst_CompKeyM.h">
       <Filter>源文件\Persistent</Filter>
     </ClInclude>
-    <ClInclude Include="TTMS_SCU_Account_Perst_DelByAcc.h">
-      <Filter>源文件\Persistent</Filter>
-    </ClInclude>
     <ClInclude Include="TTMS_SCU_Account_Perst_DelByName.h">
       <Filter>头文件\Persistent</Filter>
     </ClInclude>
