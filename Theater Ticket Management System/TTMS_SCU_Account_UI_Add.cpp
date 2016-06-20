@@ -38,7 +38,7 @@ void Account_UI_Add(USER *Admini)
 		user->power = 2;
 	}
 	if (Account_Perst_CheckAccout(user->USER_ACCOUT) == 1) {
-		TTMS_GotoXY(50, 18);
+		TTMS_GotoXY(50, 20);
 		printf_s("此账号已经存在");
 		_getch();
 		Account_UI_Add(Admini);
@@ -50,7 +50,7 @@ void Account_UI_Add(USER *Admini)
 		INPUT_PASSWORD(temppass, USER_LEN);
 		if (strcmp(temppass,user->USER_PASSWORD) != 0)
 		{
-			TTMS_GotoXY(50, 18);
+			TTMS_GotoXY(50, 20);
 			printf_s("两次输入不一致");
 			_getch();
 			Account_UI_Add(Admini);

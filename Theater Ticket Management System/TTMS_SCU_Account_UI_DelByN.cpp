@@ -17,14 +17,32 @@ void Account_UI_DeleteByName(USER * user)
 	if (Account_Perst_CheckAccout(delname) == 1)
 	{
 		USER *user = Account_Perst_FetchByName(delname);
+		TTMS_GotoXY(47, 13);
+		printf_s("姓名:%s", user->USER_NAME);
+		TTMS_GotoXY(47, 15);
+		printf_s("账号:%s", user->USER_ACCOUT);
+		TTMS_GotoXY(47, 17);
+		printf_s("身份:");
+		if (user->power == 1)
+		{
+			printf_s("售票经理");
+		}
+		else if (user->power == 2)
+		{
+			printf_s("售票员");
+		}
+		else if (user->power == 0)
+		{
+			printf_s("系统管理员");
+		}
 		Account_Perst_DelByName(delname);
-		TTMS_GotoXY(52, 18);
+		TTMS_GotoXY(52, 20);
 		printf_s("删除成功");
 		Account_Srv_Back(user);
 	}
 	else
 	{
-		TTMS_GotoXY(43, 15);
+		TTMS_GotoXY(43, 20);
 		printf_s("没有找到此系统用户，请Enter重试或Esc返回");
 	}
 	char key[15];
