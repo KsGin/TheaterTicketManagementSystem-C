@@ -161,6 +161,7 @@
     <ClInclude Include="TTMS_SCU_Account_Perst_DelByAcc.h" />
     <ClInclude Include="TTMS_SCU_Account_Perst_DelByName.h" />
     <ClInclude Include="TTMS_SCU_Account_Perst_FetchByName.h" />
+    <ClInclude Include="TTMS_SCU_Account_Perst_ModP.h" />
     <ClInclude Include="TTMS_SCU_Account_perst_Update.h" />
     <ClInclude Include="TTMS_SCU_Account_Prest_Insert.h" />
     <ClInclude Include="TTMS_SCU_Account_Srv_Add.h" />
@@ -169,11 +170,13 @@
     <ClInclude Include="TTMS_SCU_Account_Srv_FetchAll.h" />
     <ClInclude Include="TTMS_SCU_Account_Perst_FetchByAcc.h" />
     <ClInclude Include="TTMS_SCU_Account_Srv_InitSys.h" />
+    <ClInclude Include="TTMS_SCU_Account_Srv_ModP.h" />
     <ClInclude Include="TTMS_SCU_Account_Srv_Vertify.h" />
     <ClInclude Include="TTMS_SCU_Account_UI_Browe.h" />
     <ClInclude Include="TTMS_SCU_Account_UI_DelByN.h" />
     <ClInclude Include="TTMS_SCU_Account_UI_InitSys.h" />
     <ClInclude Include="TTMS_SCU_Account_UI_BoByPage.h" />
+    <ClInclude Include="TTMS_SCU_Account_UI_ModP.h" />
     <ClInclude Include="TTMS_SCU_EntKey_Srv_CompNewKey.h" />
     <ClInclude Include="TTMS_SCU_EntKey_Perst_CompNewKeys.h" />
     <ClInclude Include="TTMS_SCU_Main_UI_MgtEnt.h" />
@@ -213,6 +216,7 @@
     <ClCompile Include="TTMS_SCU_Account_Perst_CheckAccout.cpp" />
     <ClCompile Include="TTMS_SCU_Account_Perst_DelByName.cpp" />
     <ClCompile Include="TTMS_SCU_Account_Perst_FetchByName.cpp" />
+    <ClCompile Include="TTMS_SCU_Account_Perst_ModP.cpp" />
     <ClCompile Include="TTMS_SCU_Account_perst_Update.cpp" />
     <ClCompile Include="TTMS_SCU_Account_Prest_Insert.cpp" />
     <ClCompile Include="TTMS_SCU_Account_Srv_Add.cpp" />
@@ -221,13 +225,13 @@
     <ClCompile Include="TTMS_SCU_Account_Srv_FetchAll.cpp" />
     <ClCompile Include="TTMS_SCU_Account_Perst_FetchByAcc.cpp" />
     <ClCompile Include="TTMS_SCU_Account_Srv_InitSys.cpp" />
+    <ClCompile Include="TTMS_SCU_Account_Srv_ModP.cpp" />
     <ClCompile Include="TTMS_SCU_Account_Srv_Vertify.cpp" />
     <ClCompile Include="TTMS_SCU_Account_UI_BoByPage.cpp" />
     <ClCompile Include="TTMS_SCU_Account_UI_Browe.cpp" />
     <ClCompile Include="TTMS_SCU_Account_UI_DelByN.cpp" />
     <ClCompile Include="TTMS_SCU_Account_UI_InitSys.cpp" />
     <ClCompile Include="TTMS_SCU_Account_UI_ModP.cpp" />
-    <ClCompile Include="TTMS_SCU_Account_UI_ModP.h" />
     <ClCompile Include="TTMS_SCU_EntKey_Srv_CompNewKey.cpp" />
     <ClCompile Include="TTMS_SCU_EntKey_Perst_CompNewKeys.cpp" />
     <ClCompile Include="TTMS_SCU_Main_UI_MgtEnt.cpp" />

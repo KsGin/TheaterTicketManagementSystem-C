@@ -180,6 +180,15 @@
     <ClInclude Include="TTMS_SCU_Account_Perst_FetchByName.h">
       <Filter>头文件\Persistent</Filter>
     </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_UI_ModP.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_Srv_ModP.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Account_Perst_ModP.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -311,10 +320,13 @@
     <ClCompile Include="TTMS_SCU_Studio_UI_DelByID.cpp">
       <Filter>源文件\View</Filter>
     </ClCompile>
-    <ClCompile Include="TTMS_SCU_Account_UI_ModP.h">
-      <Filter>头文件\View</Filter>
-    </ClCompile>
     <ClCompile Include="TTMS_SCU_Account_UI_ModP.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_Srv_ModP.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_Perst_ModP.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

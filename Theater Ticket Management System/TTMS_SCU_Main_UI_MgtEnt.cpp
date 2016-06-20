@@ -22,8 +22,8 @@ void Main_UI_MgtEntry(USER * user)
 		if (GET_OC(44, 9, 44, 13, 2, 1, "->", 0, 1) == 1) {
 			switch (GET_CURSOR_Y())
 			{
-			case 9:Account_UI_MgtEntry(user);
-			case 11:Studio_UI_MgtEntry(user);
+			case 9:Account_UI_MgtEntry(user); break;
+			case 11:Studio_UI_MgtEntry(user); break;
 			case 13:
 				system("cls");
 				remove("Account.dat");
