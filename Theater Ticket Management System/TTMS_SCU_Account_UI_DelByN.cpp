@@ -35,7 +35,7 @@ void Account_UI_DeleteByName(USER * Admini)
 		{
 			printf_s("系统管理员");
 		}
-		TTMS_GotoXY(44, 19);
+		TTMS_GotoXY(44, 24);
 		printf_s("Enter确认删除,其他键退出");
 		char Chiose[USER_LEN];
 		strcpy_s(Chiose, USER_LEN, GET_KEY());
