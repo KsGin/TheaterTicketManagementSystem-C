@@ -311,5 +311,11 @@
     <ClCompile Include="TTMS_SCU_Studio_UI_DelByID.cpp">
       <Filter>源文件\View</Filter>
     </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_UI_ModP.h">
+      <Filter>头文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Account_UI_ModP.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

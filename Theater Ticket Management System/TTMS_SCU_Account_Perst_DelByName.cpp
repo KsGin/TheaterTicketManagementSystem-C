@@ -10,7 +10,7 @@ int Account_Perst_DelByName(char name[])
 	fopen_s(&tempfp, "Accounttemp.dat", "wb");
 	while (!feof(fp) && flag == 0)
 	{
-		flag == 0;
+		flag = 0;
 		temp = (USER *)malloc(sizeof(USER));
 		fread_s(temp, sizeof(USER), sizeof(USER), 1, fp);
 		if (strcmp(name,temp->USER_ACCOUT) == 0)

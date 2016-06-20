@@ -226,6 +226,8 @@
     <ClCompile Include="TTMS_SCU_Account_UI_Browe.cpp" />
     <ClCompile Include="TTMS_SCU_Account_UI_DelByN.cpp" />
     <ClCompile Include="TTMS_SCU_Account_UI_InitSys.cpp" />
+    <ClCompile Include="TTMS_SCU_Account_UI_ModP.cpp" />
+    <ClCompile Include="TTMS_SCU_Account_UI_ModP.h" />
     <ClCompile Include="TTMS_SCU_EntKey_Srv_CompNewKey.cpp" />
     <ClCompile Include="TTMS_SCU_EntKey_Perst_CompNewKeys.cpp" />
     <ClCompile Include="TTMS_SCU_Main_UI_MgtEnt.cpp" />

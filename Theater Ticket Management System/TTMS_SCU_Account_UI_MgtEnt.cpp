@@ -29,7 +29,7 @@ void Account_UI_MgtEntry(USER *user)
 			{
 			case 9: Account_UI_Add(user); break;
 			case 11:Account_UI_DeleteByName(user); break;
-			case 13:
+			case 13:Account_UI_ModPassword(user); break;
 			case 15:
 			case 17:Account_UI_Browe(user); break;
 			default:
