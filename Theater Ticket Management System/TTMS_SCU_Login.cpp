@@ -14,10 +14,10 @@ void SysLogin()
 	TTMS_GotoXY(50, 11);
 	printf_s("’À∫≈:");
 	TTMS_GotoXY(50, 13);
-	printf_s("√‹¬Î:");
+	printf_s("√‹¬Î(1/3):");
 	TTMS_GotoXY(56, 11);
 	INPUT_ACCOUT(useraccount, USER_LEN);
-	TTMS_GotoXY(56, 13);
+	TTMS_GotoXY(60, 13);
 	INPUT_PASSWORD(userpassword, USER_LEN);
 	if (Account_Perst_CheckAccout(useraccount) == 0)
 	{
@@ -29,21 +29,37 @@ void SysLogin()
 	}
 	else
 	{
+		int count = 1;
 		int flag = Account_Srv_Verify(useraccount, userpassword);
-		if (flag == 1)
+		while(count <= 3)
 		{
-			USER *user = Account_Perst_FetchByAccount(useraccount);
-			TTMS_GotoXY(55, 20);
-			printf_s("µ«¬Ω≥…π¶");
-			TTMS_GotoXY(52, 22);
-			Main_UI_MgtEntry(user);
+			int flag = Account_Srv_Verify(useraccount, userpassword);
+			if (flag == 1)
+			{
+				USER *user = Account_Perst_FetchByAccount(useraccount);
+				TTMS_GotoXY(55, 20);
+				printf_s("µ«¬Ω≥…π¶");
+				TTMS_GotoXY(52, 22);
+				Main_UI_MgtEntry(user);
+			}
+			else {
+				if (count == 3)
+				{
+					TTMS_GotoXY(52, 20);
+					printf_s("√‹¬Î¥ÌŒÛ¥Œ ˝Ã´∂‡!");
+					TTMS_GotoXY(55, 3);
+					exit(1);
+				}
+				TTMS_GotoXY(55, 20);
+				printf_s("√‹¬Î¥ÌŒÛ");
+				TTMS_GotoXY(50, 13+count*2);
+				printf_s("√‹¬Î(%d/3):                                  ",count+1);
+				TTMS_GotoXY(60, 13+count*2);
+				INPUT_PASSWORD(userpassword, USER_LEN);
+				count++;
+			}
 		}
-		if (flag == 0)
-		{
-			TTMS_GotoXY(55, 20);
-			printf_s("√‹¬Î¥ÌŒÛ");
-			_getch();
-			SysLogin();
-		}
+		TTMS_GotoXY(55, 3);
+		exit(1);
 	}
 }

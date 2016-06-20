@@ -177,6 +177,7 @@
     <ClInclude Include="TTMS_SCU_Account_UI_InitSys.h" />
     <ClInclude Include="TTMS_SCU_Account_UI_BoByPage.h" />
     <ClInclude Include="TTMS_SCU_Account_UI_ModP.h" />
+    <ClInclude Include="TTMS_SCU_Account_UI_QUE.h" />
     <ClInclude Include="TTMS_SCU_EntKey_Srv_CompNewKey.h" />
     <ClInclude Include="TTMS_SCU_EntKey_Perst_CompNewKeys.h" />
     <ClInclude Include="TTMS_SCU_Main_UI_MgtEnt.h" />
@@ -232,6 +233,7 @@
     <ClCompile Include="TTMS_SCU_Account_UI_DelByN.cpp" />
     <ClCompile Include="TTMS_SCU_Account_UI_InitSys.cpp" />
     <ClCompile Include="TTMS_SCU_Account_UI_ModP.cpp" />
+    <ClCompile Include="TTMS_SCU_Account_UI_QUE.cpp" />
     <ClCompile Include="TTMS_SCU_EntKey_Srv_CompNewKey.cpp" />
     <ClCompile Include="TTMS_SCU_EntKey_Perst_CompNewKeys.cpp" />
     <ClCompile Include="TTMS_SCU_Main_UI_MgtEnt.cpp" />
