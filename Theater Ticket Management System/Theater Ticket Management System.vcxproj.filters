@@ -159,12 +159,6 @@
     <ClInclude Include="TTMS_SCU_Studio_Perst_DelByID.h">
       <Filter>头文件\Persistent</Filter>
     </ClInclude>
-    <ClInclude Include="TTMS_SCU_Studio_Perst_CompKeyP.h">
-      <Filter>源文件\Persistent</Filter>
-    </ClInclude>
-    <ClInclude Include="TTMS_SCU_Studio_Perst_CompKeyM.h">
-      <Filter>源文件\Persistent</Filter>
-    </ClInclude>
     <ClInclude Include="TTMS_SCU_Account_Perst_DelByName.h">
       <Filter>头文件\Persistent</Filter>
     </ClInclude>
@@ -188,6 +182,21 @@
     </ClInclude>
     <ClInclude Include="TTMS_SCU_Account_UI_QUE.h">
       <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Studio_Perst_CompKeyM.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Studio_Perst_CompKeyP.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Studio_UI_Browe.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Studio_UI_LookByP.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Studio_Srv_FetchById.h">
+      <Filter>头文件\Service</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -331,6 +340,15 @@
     </ClCompile>
     <ClCompile Include="TTMS_SCU_Account_UI_QUE.cpp">
       <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Studio_UI_Browe.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Studio_UI_LookByP.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Studio_Srv_FetchById.cpp">
+      <Filter>源文件\Service</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

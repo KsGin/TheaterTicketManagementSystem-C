@@ -19,9 +19,11 @@ void Studio_UI_MgtEntry(USER * user)
 	printf_s("NO3:删除演出厅");
 	TTMS_GotoXY(47, 15);
 	printf_s("NO4:座位管理");
+	TTMS_GotoXY(47, 17);
+	printf_s("No5:查看演出厅");
 	TTMS_GotoXY(47, 19);
-	int flag = GET_OC(44, 9, 44, 15, 2, 1, "->", 0, 1);
-	if (flag == 1)
+	int flag = GET_OC(44, 9, 44, 17, 2, 1, "->", 0, 1);
+	if (flag ==1)
 	{
 		switch (GET_CURSOR_Y())
 		{
@@ -29,6 +31,7 @@ void Studio_UI_MgtEntry(USER * user)
 		case 11: break;
 		case 13:Studio_UI_Delete(user); break;
 		case 15:
+		case 17:Studio_UI_Browe(user); break;
 		default:
 			break;
 		}

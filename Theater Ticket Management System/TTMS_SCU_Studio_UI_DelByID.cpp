@@ -28,11 +28,9 @@ void Studio_UI_Delete(USER *User)
 		printf_s("座位列数:%d", studio->data.rowsCount);
 		TTMS_GotoXY(45, 16);
 		printf_s("座位行数:%d", studio->data.colsCount);
-		TTMS_GotoXY(45, 18);
-		printf_s("每行座位数:%d", studio->data.seatsCount);
 		TTMS_GotoXY(52, 20);
 		printf_s("Enter键继续删除!");
-		TTMS_GotoXY(50, 22);
+		TTMS_GotoXY(54, 22);
 		char key[20];
 		strcpy_s(key, 20, GET_KEY());
 		if (strcmp(key, "Enter") == 0)

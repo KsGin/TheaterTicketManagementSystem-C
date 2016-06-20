@@ -5,6 +5,7 @@ int Studio_Perst_DeleteByID(int ID)
 {
 	FILE *fp, *tempfp;
 	STUDIO *studio,*temp;
+	int flag = 0;
 	studio = Studio_Perst_FetchByID(ID);
 	if (studio == nullptr)
 	{
@@ -12,15 +13,24 @@ int Studio_Perst_DeleteByID(int ID)
 	}
 	fopen_s(&fp, "Studio.dat", "rb");
 	fopen_s(&tempfp, "Studiotemp.dat", "wb");
-	while (!feof(fp))
+	temp = (STUDIO *)malloc(sizeof(STUDIO));
+	fseek(fp, 0, SEEK_END);
+	int sizefile = ftell(fp);
+	fseek(fp, 0, SEEK_SET);
+	while (!feof(fp) && ftell(fp) < sizefile)
 	{
-		temp = (STUDIO *)malloc(sizeof(STUDIO));
 		fread_s(temp, sizeof(STUDIO), sizeof(STUDIO), 1, fp);
-		if (studio->data.id == temp->data.id)
+		if (studio->data.id != temp->data.id)
 		{
-			continue;
+			if (flag == 1)
+			{
+				temp->data.id = temp->data.id - 1;
+			}
+			fwrite(temp, sizeof(STUDIO), 1, tempfp);
 		}
-		fwrite(temp, sizeof(STUDIO), 1, tempfp);
+		else {
+			flag = 1;
+		}
 	}
 	fclose(fp);
 	fclose(tempfp);

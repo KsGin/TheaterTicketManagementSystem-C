@@ -19,9 +19,6 @@ void Studio_UI_add(USER *user)
 	TTMS_GotoXY(47, 13);
 	printf_s("演出厅座位列数:");
 	scanf_s("%d", &studio_add->data.colsCount);
-	TTMS_GotoXY(47, 15);
-	printf_s("演出厅行座位数:");
-	scanf_s("%d", &studio_add->data.seatsCount);
 	studio_add->data.id = EntKey_Srv_CompNewKey();
 	Studio_Srv_Add(studio_add);
 	TTMS_GotoXY(48, 18);

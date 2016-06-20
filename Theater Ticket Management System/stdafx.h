@@ -59,4 +59,7 @@
 #include "TTMS_SCU_Account_Perst_ModP.h"
 #include "TTMS_SCU_Account_UI_QUE.h"
 #include "TTMS_SCU_Account_Perst_DelByName.h"
+#include "TTMS_SCU_Studio_UI_Browe.h"
+#include "TTMS_SCU_Studio_UI_LookByP.h"
+#include "TTMS_SCU_Studio_Srv_FetchById.h"
 // TODO:  在此处引用程序需要的其他头文件

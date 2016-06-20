@@ -4,7 +4,6 @@ typedef struct {
 	char name[30];	//放映厅名称
 	int rowsCount;	//座位行数
 	int colsCount;	//座位列数
-	int seatsCount;
 } studio_t;
 
 //双向链表

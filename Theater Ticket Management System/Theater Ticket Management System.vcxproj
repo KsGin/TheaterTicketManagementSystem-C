@@ -189,10 +189,13 @@
     <ClInclude Include="TTMS_SCU_Studio_Perst_DelByID.h" />
     <ClInclude Include="TTMS_SCU_Studio_Perst_FetchByID.h" />
     <ClInclude Include="TTMS_SCU_Studio_Perst_Insert.h" />
+    <ClInclude Include="TTMS_SCU_Studio_Srv_FetchById.h" />
     <ClInclude Include="TTMS_SCU_Studio_Srv_Infor.h" />
     <ClInclude Include="TTMS_SCU_Studio_Srv_Add.h" />
     <ClInclude Include="TTMS_SCU_Studio_UI_Add.h" />
+    <ClInclude Include="TTMS_SCU_Studio_UI_Browe.h" />
     <ClInclude Include="TTMS_SCU_Studio_UI_DelByID.h" />
+    <ClInclude Include="TTMS_SCU_Studio_UI_LookByP.h" />
     <ClInclude Include="TTMS_SCU_Studio_UI_MgtEnt.h" />
   </ItemGroup>
   <ItemGroup>
@@ -245,8 +248,11 @@
     <ClCompile Include="TTMS_SCU_Studio_Perst_FetchByID.cpp" />
     <ClCompile Include="TTMS_SCU_Studio_Perst_Insert.cpp" />
     <ClCompile Include="TTMS_SCU_Studio_Srv_Add.cpp" />
+    <ClCompile Include="TTMS_SCU_Studio_Srv_FetchById.cpp" />
     <ClCompile Include="TTMS_SCU_Studio_UI_Add.cpp" />
+    <ClCompile Include="TTMS_SCU_Studio_UI_Browe.cpp" />
     <ClCompile Include="TTMS_SCU_Studio_UI_DelByID.cpp" />
+    <ClCompile Include="TTMS_SCU_Studio_UI_LookByP.cpp" />
     <ClCompile Include="TTMS_SCU_Studio_UI_MgtEnt.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
