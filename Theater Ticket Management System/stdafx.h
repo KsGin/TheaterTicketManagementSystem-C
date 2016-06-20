@@ -58,4 +58,5 @@
 #include "TTMS_SCU_Account_UI_ModP.h"
 #include "TTMS_SCU_Account_Srv_ModP.h"
 #include "TTMS_SCU_Account_Perst_ModP.h"
+#include "TTMS_SCU_Account_UI_QUE.h"
 // TODO:  在此处引用程序需要的其他头文件

@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "TTMS_SCU_Account_UI_DelByN.h"
 
-void Account_UI_DeleteByName(USER * user)
+void Account_UI_DeleteByName(USER * Admini)
 {
 	system("cls");
 	BIOS_GOTO_BOX(22, 100, 5, 25);
@@ -10,7 +10,7 @@ void Account_UI_DeleteByName(USER * user)
 	TTMS_GotoXY(52, 6);
 	printf_s("没人来大剧院");
 	TTMS_GotoXY(43, 9);
-	printf_s("%s您好，请输入要删除的用户ID", user->USER_NAME);
+	printf_s("%s您好，请输入要删除的用户ID", Admini->USER_NAME);
 	TTMS_GotoXY(54, 11);
 	char delname[USER_LEN];
 	scanf_s("%s",delname,USER_LEN);
@@ -35,21 +35,21 @@ void Account_UI_DeleteByName(USER * user)
 		{
 			printf_s("系统管理员");
 		}
-		TTMS_GotoXY(47, 19);
+		TTMS_GotoXY(44, 19);
 		printf_s("Enter确认删除,其他键退出");
 		char Chiose[USER_LEN];
 		strcpy_s(Chiose, USER_LEN, GET_KEY());
 		if (strcmp(Chiose,"Enter") == 0)
 		{
 			Account_Perst_DelByName(delname);
-			TTMS_GotoXY(52, 20);
+			TTMS_GotoXY(53, 20);
 			printf_s("删除成功");
-			Account_Srv_Back(user);
+			Account_Srv_Back(Admini);
 		}
 		else {
-			TTMS_GotoXY(47, 20);
+			TTMS_GotoXY(53, 20);
 			printf_s("取消成功");
-			Account_Srv_Back(user);
+			Account_Srv_Back(Admini);
 		}
 	}
 	else
@@ -61,10 +61,10 @@ void Account_UI_DeleteByName(USER * user)
 	strcpy_s(key,15, GET_KEY());
 	if (strcmp(key,"Esc") == 0)
 	{
-		Account_UI_MgtEntry(user);
+		Account_UI_MgtEntry(Admini);
 	}
 	else
 	{
-		Account_UI_DeleteByName(user);
+		Account_UI_DeleteByName(Admini);
 	}
 }

@@ -333,7 +333,7 @@
       <Filter>源文件\View</Filter>
     </ClCompile>
     <ClCompile Include="TTMS_SCU_Account_UI_QUE.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\View</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
