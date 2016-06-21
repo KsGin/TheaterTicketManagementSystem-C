@@ -30,7 +30,7 @@ void Studio_UI_MgtEntry(USER * user)
 		case 9: Studio_UI_add(user); break;
 		case 11:Studio_UI_Mod(user); break;
 		case 13:Studio_UI_Delete(user); break;
-		case 15:
+		case 15:Seat_UI_MgtEntry(user); break;
 		case 17:Studio_UI_Browe(user); break;
 		default:
 			break;

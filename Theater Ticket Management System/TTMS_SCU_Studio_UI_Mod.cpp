@@ -13,7 +13,7 @@ void Studio_UI_Mod(USER * user)
 	STUDIO *studio = Studio_Srv_FetchByID(ID);
 	if (studio)
 	{
-		int NewId, NewRowCount, NewColsCount;
+		int  NewRowCount, NewColsCount;
 		char NewName[30],key[15];
 		BIOS_GOTO_BOX(22, 100, 12, 11);
 		BIOS_GOTO_BOX(22, 100, 17, 16);
