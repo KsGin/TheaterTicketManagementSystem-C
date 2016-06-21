@@ -54,7 +54,7 @@ void Main_UI_MgtEntry(USER * user)
 		printf_s("No5:统计销售额");
 		TTMS_GotoXY(47, 19);
 		printf_s("No5:修改密码");
-		if (GET_OC(44, 9, 44, 9, 2, 1, "->", 0, 1) == 1) {
+		if (GET_OC(44, 9, 44, 19, 2, 1, "->", 0, 1) == 1) {
 			switch (GET_CURSOR_Y())
 			{
 			case 9: break;
@@ -84,7 +84,7 @@ void Main_UI_MgtEntry(USER * user)
 		printf_s("No5:统计销售额");
 		TTMS_GotoXY(47, 19);
 		printf_s("No5:修改密码");
-		if (GET_OC(44, 9, 44, 9, 2, 1, "->", 0, 1) == 1) {
+		if (GET_OC(44, 9, 44, 19, 2, 1, "->", 0, 1) == 1) {
 			switch (GET_CURSOR_Y())
 			{
 			case 9: break;
