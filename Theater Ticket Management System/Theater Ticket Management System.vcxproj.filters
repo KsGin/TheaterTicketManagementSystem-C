@@ -303,13 +303,46 @@
     <ClInclude Include="TTMS_SCU_Play_Srv_FetchById.h">
       <Filter>源文件\Service</Filter>
     </ClInclude>
-    <ClInclude Include="TTMS_SCU_Play_UI_Mod.h">
-      <Filter>源文件\View</Filter>
-    </ClInclude>
     <ClInclude Include="TTMS_SCU_Play_Srv_Mod.h">
       <Filter>头文件\Service</Filter>
     </ClInclude>
     <ClInclude Include="TTMS_SCU_Play_Perst_Mod.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Schedule_Srv_Info.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Schedule_UI_MgtEnt.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_EntKeySche_Perst_CompNewKeys.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_EntKeySche_Perst_CompKeyP.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_EntKeySche_Perst_CompKeyM.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Sche_Perst_FetchByID.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Sche_Srv_FetchByID.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Play_UI_Mod.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Schedule_Srv_Check.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Schedule_UI_Add.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Schedule_Srv_Add.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Schedule_Perst_Insert.h">
       <Filter>头文件\Persistent</Filter>
     </ClInclude>
   </ItemGroup>
@@ -564,13 +597,43 @@
       <Filter>源文件\Service</Filter>
     </ClCompile>
     <ClCompile Include="TTMS_SCU_Play_UI_Mod.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\View</Filter>
     </ClCompile>
     <ClCompile Include="TTMS_SCU_Play_Srv_Mod.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\Service</Filter>
     </ClCompile>
     <ClCompile Include="TTMS_SCU_Play_Perst_Mod.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_EntKeySche_Perst_CompKeyM.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_EntKeySche_Perst_CompKeyP.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_EntKeySche_Perst_CompNewKeys.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Sche_Perst_FetchByID.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Sche_Srv_FetchByID.cpp">
+      <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Schedule_UI_MgtEnt.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Schedule_Srv_Check.cpp">
+      <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Schedule_Perst_Insert.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Schedule_Srv_Add.cpp">
+      <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Schedule_UI_Add.cpp">
+      <Filter>源文件\View</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -30,7 +30,7 @@ void Play_UI_MgtEntry(USER * user)
 		case 9: Play_UI_Add(user); break;
 		case 11:Play_UI_Mod(user); break;
 		case 13:Play_UI_Delete(user); break;
-		case 15: break;
+		case 15:Schedule_UI_MgtEntry(user); break;
 		case 17:Play_UI_Browe(user); break;
 		default:
 			break;
