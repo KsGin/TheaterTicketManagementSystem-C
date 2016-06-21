@@ -82,4 +82,7 @@
 #include "TTMS_SCU_Seat_UI_Mod.h"
 #include "TTMS_SCU_Seat_Perst_Mod.h"
 #include "TTMS_SCU_Seat_UI_Browe.h"
+#include "TTMS_SCU_Play_UI_MgtEnt.h"
+#include "TTMS_SCU_Play_UI_Add.h"
+#include "TTMS_SCU_Play_Srv_Info.h"
 // TODO:  在此处引用程序需要的其他头文件

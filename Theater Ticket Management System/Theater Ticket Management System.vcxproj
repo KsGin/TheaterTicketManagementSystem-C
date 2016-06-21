@@ -187,6 +187,9 @@
     <ClInclude Include="TTMS_SCU_Login.h" />
     <ClInclude Include="TTMS_SCU_Account_UI_Add.h" />
     <ClInclude Include="TTMS_SCU_Account_Srv_Infor.h" />
+    <ClInclude Include="TTMS_SCU_Play_Srv_Info.h" />
+    <ClInclude Include="TTMS_SCU_Play_UI_Add.h" />
+    <ClInclude Include="TTMS_SCU_Play_UI_MgtEnt.h" />
     <ClInclude Include="TTMS_SCU_Seat_Perst_Del.h" />
     <ClInclude Include="TTMS_SCU_Seat_Perst_Insert.h" />
     <ClInclude Include="TTMS_SCU_Seat_Perst_FetchByID.h" />
@@ -265,6 +268,8 @@
     <ClCompile Include="TTMS_SCU_Account_UI_MgtEnt.cpp" />
     <ClCompile Include="TTMS_SCU_Login.cpp" />
     <ClCompile Include="TTMS_SCU_Account_UI_Add.cpp" />
+    <ClCompile Include="TTMS_SCU_Play_UI_Add.cpp" />
+    <ClCompile Include="TTMS_SCU_Play_UI_MgtEnt.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_Perst_Del.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_Perst_Insert.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_Perst_FetchByID.cpp" />

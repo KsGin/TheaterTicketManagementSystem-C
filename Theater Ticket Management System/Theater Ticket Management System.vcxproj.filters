@@ -258,6 +258,15 @@
     <ClInclude Include="TTMS_SCU_Seat_UI_Browe.h">
       <Filter>头文件\View</Filter>
     </ClInclude>
+    <ClInclude Include="TTMS_SCU_Play_UI_MgtEnt.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Play_UI_Add.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Play_Srv_Info.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -465,6 +474,12 @@
       <Filter>源文件\Service</Filter>
     </ClCompile>
     <ClCompile Include="TTMS_SCU_Seat_UI_Browe.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Play_UI_Add.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Play_UI_MgtEnt.cpp">
       <Filter>源文件\View</Filter>
     </ClCompile>
   </ItemGroup>

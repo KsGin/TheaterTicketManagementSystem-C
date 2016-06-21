@@ -29,7 +29,13 @@ void Account_UI_ModPassword(USER *user)
 				TTMS_GotoXY(53, 18);
 				printf_s("修改成功,任意键返回");
 				_getch();
-				Account_UI_MgtEntry(user);
+				if (user->power == 0)
+				{
+					Account_UI_MgtEntry(user);
+				}
+				else {
+					Main_UI_MgtEntry(user);
+				}
 			}
 			_getch();
 		}
@@ -38,7 +44,13 @@ void Account_UI_ModPassword(USER *user)
 			TTMS_GotoXY(53, 18);
 			printf_s("两次不一致");
 			_getch();
-			Account_UI_MgtEntry(user);
+			if (user->power == 0)
+			{
+				Account_UI_MgtEntry(user);
+			}
+			else {
+				Main_UI_MgtEntry(user);
+			}
 		}
 	}
 	else
@@ -46,6 +58,12 @@ void Account_UI_ModPassword(USER *user)
 		TTMS_GotoXY(53, 18);
 		printf_s("原密码输入错误");
 		_getch();
-		Account_UI_MgtEntry(user);
+		if (user->power == 0)
+		{
+			Account_UI_MgtEntry(user);
+		}
+		else {
+			Main_UI_MgtEntry(user);
+		}
 	}
 }
