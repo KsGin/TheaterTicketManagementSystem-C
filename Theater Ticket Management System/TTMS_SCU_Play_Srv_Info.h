@@ -1,7 +1,7 @@
 #pragma once
 
 typedef enum {
-	PLAY_TYPE_FILE = 1,
+	PLAY_TYPE_FLIM = 1,
 	PLAY_TYPE_OPEAR = 2,
 	PLAY_TYPE_CONCERT = 3
 } play_type_t;//剧目类型定义，1表示电影，2表示歌剧，3表示音乐会

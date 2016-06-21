@@ -6,7 +6,7 @@ int Play_Perst_DeleteByID(int ID)
 	FILE *fp, *tempfp;
 	PLAY *play, *temp;
 	int flag = 0;
-	play = Play_Perst_FetchByID(ID);
+	play = Play_Srv_FetchByID(ID);
 	if (play == nullptr)
 	{
 		return 0;

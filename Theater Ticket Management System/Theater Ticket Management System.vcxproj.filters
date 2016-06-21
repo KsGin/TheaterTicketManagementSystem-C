@@ -300,6 +300,18 @@
     <ClInclude Include="TTMS_SCU_Play_Perst_Del.h">
       <Filter>头文件\Persistent</Filter>
     </ClInclude>
+    <ClInclude Include="TTMS_SCU_Play_Srv_FetchById.h">
+      <Filter>源文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Play_UI_Mod.h">
+      <Filter>源文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Play_Srv_Mod.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Play_Perst_Mod.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -542,10 +554,22 @@
     <ClCompile Include="TTMS_SCU_Play_UI_LookByP.cpp">
       <Filter>源文件\View</Filter>
     </ClCompile>
+    <ClCompile Include="TTMS_SCU_Play_Perst_Del.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
     <ClCompile Include="TTMS_SCU_Play_UI_Del.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Play_Srv_FetchById.cpp">
+      <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Play_UI_Mod.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="TTMS_SCU_Play_Perst_Del.cpp">
+    <ClCompile Include="TTMS_SCU_Play_Srv_Mod.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Play_Perst_Mod.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

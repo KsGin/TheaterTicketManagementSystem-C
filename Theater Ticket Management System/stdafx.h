@@ -97,4 +97,8 @@
 #include "TTMS_SCU_Play_UI_LookByP.h"
 #include "TTMS_SCU_Play_Perst_Del.h"
 #include "TTMS_SCU_Play_UI_Del.h"
+#include "TTMS_SCU_Play_Srv_FetchById.h"
+#include "TTMS_SCU_Play_UI_Mod.h"
+#include "TTMS_SCU_Play_Srv_Mod.h"
+#include "TTMS_SCU_Play_Perst_Mod.h"
 // TODO:  在此处引用程序需要的其他头文件

@@ -18,25 +18,56 @@ void Play_UI_Add(USER * user)
 	printf_s("剧目时长:");
 	TTMS_GotoXY(47, 15);
 	printf_s("剧目价格:");
-//	TTMS_GotoXY(47, 15);
-//	printf_s("剧目票务价格:");
-//	TTMS_GotoXY(48, 18);
+	TTMS_GotoXY(35, 17);
+	printf_s("类型:");
+	TTMS_GotoXY(46, 17);
+	printf_s("电影");
+	TTMS_GotoXY(61, 17);
+	printf_s("歌剧");
+	TTMS_GotoXY(76, 17);
+	printf_s("音乐会");
+	TTMS_GotoXY(35, 19);
+	printf_s("等级:");
+	TTMS_GotoXY(46, 19);
+	printf_s("小孩");
+	TTMS_GotoXY(61, 19);
+	printf_s("青年");
+	TTMS_GotoXY(76, 19);
+	printf_s("成人");
 	TTMS_GotoXY(57, 9);
-	scanf_s("%s", Play_add->data.name,31);
+	scanf_s("%s", Play_add->data.name, 31);
 	TTMS_GotoXY(57, 11);
-	scanf_s("%s", Play_add->data.area,9);
+	scanf_s("%s", Play_add->data.area, 9);
 	TTMS_GotoXY(57, 13);
 	scanf_s("%d", &Play_add->data.duration);
 	TTMS_GotoXY(57, 15);
 	scanf_s("%d", &Play_add->data.price);
+	GET_OC(43, 17, 73, 17, 0, 15, "->", 1, 0);
+	switch (GET_CURSOR_X())
+	{
+	case 45:Play_add->data.type = PLAY_TYPE_FLIM;
+	case 60:Play_add->data.type = PLAY_TYPE_OPEAR;
+	case 75:Play_add->data.type = PLAY_TYPE_CONCERT;
+	default:
+		break;
+	}
+	GET_OC(43, 19, 73, 19, 0, 15, "->", 1, 0);
+	switch (GET_CURSOR_X())
+	{
+	case 45:Play_add->data.rating = PLAY_RATE_CHILD;
+	case 60:Play_add->data.rating = PLAY_RATE_TEENAGE;
+	case 75:Play_add->data.rating = PLAY_RATE_ADULT;
+	default:
+		break;
+	}
 	if (Play_Srv_Add(Play_add) == 0)
 	{
-		TTMS_GotoXY(48, 20);
+		TTMS_GotoXY(48, 23);
 		printf_s("添加失败,完全相同剧目已存在");
 		_getch();
 		Play_UI_MgtEntry(user);
 	}
-	TTMS_GotoXY(48, 20);
+	TTMS_GotoXY(48, 23);
 	printf_s("添加成功,任意键返回");
 	_getch();
 	Play_UI_MgtEntry(user);
