@@ -41,4 +41,64 @@ void Main_UI_MgtEntry(USER * user)
 			SysLogin();
 		}
 	}
+	else if(user->power == 1){
+		TTMS_GotoXY(47, 9);
+		printf_s("No1:剧目管理");
+		TTMS_GotoXY(47, 11);
+		printf_s("No2:查询演出");
+		TTMS_GotoXY(47, 13);
+		printf_s("No3:查询演出票");
+		TTMS_GotoXY(47, 15);
+		printf_s("No4:分析销售数据");
+		TTMS_GotoXY(47, 17);
+		printf_s("No5:统计销售额");
+		TTMS_GotoXY(47, 19);
+		printf_s("No5:修改密码");
+		if (GET_OC(44, 9, 44, 9, 2, 1, "->", 0, 1) == 1) {
+			switch (GET_CURSOR_Y())
+			{
+			case 9: break;
+			case 11: break;
+			case 13:
+			case 15:
+			case 17:
+			case 19:Account_UI_ModPassword(user); break;
+			default:
+				break;
+			}
+		}
+		else {
+			SysLogin();
+		}
+	}
+	else if (user->power == 2) {
+		TTMS_GotoXY(47, 9);
+		printf_s("No1:售票");
+		TTMS_GotoXY(47, 11);
+		printf_s("No2:查询演出");
+		TTMS_GotoXY(47, 13);
+		printf_s("No3:查询演出票");
+		TTMS_GotoXY(47, 15);
+		printf_s("No4:分析销售数据");
+		TTMS_GotoXY(47, 17);
+		printf_s("No5:统计销售额");
+		TTMS_GotoXY(47, 19);
+		printf_s("No5:修改密码");
+		if (GET_OC(44, 9, 44, 9, 2, 1, "->", 0, 1) == 1) {
+			switch (GET_CURSOR_Y())
+			{
+			case 9: break;
+			case 11: break;
+			case 13:
+			case 15:
+			case 17:
+			case 19:Account_UI_ModPassword(user); break;
+			default:
+				break;
+			}
+		}
+		else {
+			SysLogin();
+		}
+	}
 }
