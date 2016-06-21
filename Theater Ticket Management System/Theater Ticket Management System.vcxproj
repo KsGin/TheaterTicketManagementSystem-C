@@ -154,6 +154,9 @@
     <ClInclude Include="INPUT_PASSWORD.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="TTMS_SCU_EntKeyPlay_Perst_CompKeyM.h" />
+    <ClInclude Include="TTMS_SCU_EntKeyPlay_Perst_CompKeyP.h" />
+    <ClInclude Include="TTMS_SCU_EntKeyPlay_Perst_CompNewKeys.h" />
     <ClInclude Include="TTMS_SCU_EntKeySeat_Perst_CompP.h" />
     <ClInclude Include="TTMS_GotoXY.h" />
     <ClInclude Include="TTMS_INITIAL.h" />
@@ -187,8 +190,16 @@
     <ClInclude Include="TTMS_SCU_Login.h" />
     <ClInclude Include="TTMS_SCU_Account_UI_Add.h" />
     <ClInclude Include="TTMS_SCU_Account_Srv_Infor.h" />
+    <ClInclude Include="TTMS_SCU_Play_Perst_Del.h" />
+    <ClInclude Include="TTMS_SCU_Play_Perst_FetchByID.h" />
+    <ClInclude Include="TTMS_SCU_Play_Perst_Insert.h" />
+    <ClInclude Include="TTMS_SCU_Play_Srv_Add.h" />
+    <ClInclude Include="TTMS_SCU_Play_Srv_Check.h" />
     <ClInclude Include="TTMS_SCU_Play_Srv_Info.h" />
     <ClInclude Include="TTMS_SCU_Play_UI_Add.h" />
+    <ClInclude Include="TTMS_SCU_Play_UI_Browe.h" />
+    <ClInclude Include="TTMS_SCU_Play_UI_Del.h" />
+    <ClInclude Include="TTMS_SCU_Play_UI_LookByP.h" />
     <ClInclude Include="TTMS_SCU_Play_UI_MgtEnt.h" />
     <ClInclude Include="TTMS_SCU_Seat_Perst_Del.h" />
     <ClInclude Include="TTMS_SCU_Seat_Perst_Insert.h" />
@@ -236,6 +247,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="TTMS.cpp" />
+    <ClCompile Include="TTMS_SCU_EntKeyPlay_Perst_CompKeyM.cpp" />
+    <ClCompile Include="TTMS_SCU_EntKeyPlay_Perst_CompKeyP.cpp" />
+    <ClCompile Include="TTMS_SCU_EntKeyPlay_Perst_CompNewKeys.cpp" />
     <ClCompile Include="TTMS_SCU_EntKeySeat_Perst_CompP.cpp" />
     <ClCompile Include="TTMS_GotoXY.cpp" />
     <ClCompile Include="TTMS_INITIAL.cpp" />
@@ -268,7 +282,15 @@
     <ClCompile Include="TTMS_SCU_Account_UI_MgtEnt.cpp" />
     <ClCompile Include="TTMS_SCU_Login.cpp" />
     <ClCompile Include="TTMS_SCU_Account_UI_Add.cpp" />
+    <ClCompile Include="TTMS_SCU_Play_Perst_Del.cpp" />
+    <ClCompile Include="TTMS_SCU_Play_Perst_FetchByID.cpp" />
+    <ClCompile Include="TTMS_SCU_Play_Perst_Insert.cpp" />
+    <ClCompile Include="TTMS_SCU_Play_Srv_Add.cpp" />
+    <ClCompile Include="TTMS_SCU_Play_Srv_Check.cpp" />
     <ClCompile Include="TTMS_SCU_Play_UI_Add.cpp" />
+    <ClCompile Include="TTMS_SCU_Play_UI_Browe.cpp" />
+    <ClCompile Include="TTMS_SCU_Play_UI_Del.cpp" />
+    <ClCompile Include="TTMS_SCU_Play_UI_LookByP.cpp" />
     <ClCompile Include="TTMS_SCU_Play_UI_MgtEnt.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_Perst_Del.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_Perst_Insert.cpp" />

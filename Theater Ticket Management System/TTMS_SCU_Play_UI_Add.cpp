@@ -13,15 +13,31 @@ void Play_UI_Add(USER * user)
 	TTMS_GotoXY(47, 9);
 	printf_s("剧目名称:");
 	TTMS_GotoXY(47, 11);
-	printf_s("剧目类型:");
+	printf_s("出产地区:");
 	TTMS_GotoXY(47, 13);
-	printf_s("剧目等级:");
-	TTMS_GotoXY(47, 15);
 	printf_s("剧目时长:");
 	TTMS_GotoXY(47, 15);
-	printf_s("剧目票务价格:");
-	TTMS_GotoXY(48, 18);
+	printf_s("剧目价格:");
+//	TTMS_GotoXY(47, 15);
+//	printf_s("剧目票务价格:");
+//	TTMS_GotoXY(48, 18);
+	TTMS_GotoXY(57, 9);
+	scanf_s("%s", Play_add->data.name,31);
+	TTMS_GotoXY(57, 11);
+	scanf_s("%s", Play_add->data.area,9);
+	TTMS_GotoXY(57, 13);
+	scanf_s("%d", &Play_add->data.duration);
+	TTMS_GotoXY(57, 15);
+	scanf_s("%d", &Play_add->data.price);
+	if (Play_Srv_Add(Play_add) == 0)
+	{
+		TTMS_GotoXY(48, 20);
+		printf_s("添加失败,完全相同剧目已存在");
+		_getch();
+		Play_UI_MgtEntry(user);
+	}
+	TTMS_GotoXY(48, 20);
 	printf_s("添加成功,任意键返回");
 	_getch();
-	Studio_UI_MgtEntry(user);
+	Play_UI_MgtEntry(user);
 }

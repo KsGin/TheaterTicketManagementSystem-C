@@ -28,10 +28,10 @@ void Play_UI_MgtEntry(USER * user)
 		switch (GET_CURSOR_Y())
 		{
 		case 9: Play_UI_Add(user); break;
-		case 11:Studio_UI_Mod(user); break;
-		case 13:Studio_UI_Delete(user); break;
-		case 15:Seat_UI_MgtEntry(user); break;
-		case 17:Studio_UI_Browe(user); break;
+		case 11: break;
+		case 13:Play_UI_Delete(user); break;
+		case 15: break;
+		case 17:Play_UI_Browe(user); break;
 		default:
 			break;
 		}

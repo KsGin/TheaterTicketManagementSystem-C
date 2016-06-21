@@ -31,6 +31,8 @@ void Main_UI_MgtEntry(USER * user)
 				remove("EntityKey.dat");
 				remove("Seat.dat");
 				remove("EntityKeySeat.dat");
+				remove("Play.dat");
+				remove("EntityKeyPlay.dat");
 				TTMS_INITIAL();
 				exit(0);
 			default:
