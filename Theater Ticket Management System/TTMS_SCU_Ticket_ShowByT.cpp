@@ -4,6 +4,8 @@
 int Ticket_UI_ShowTicketByT(TICKET * ticket)
 {
 	system("cls");
+	TTMS_GotoXY(55, 6);
+	printf_s("没人来大剧院");
 	BIOS_GOTO_BOX(22, 100, 5, 25);
 	BIOS_GOTO_BOX(22, 100, 8, 7);
 	TTMS_GotoXY(52, 6);

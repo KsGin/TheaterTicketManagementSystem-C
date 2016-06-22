@@ -35,6 +35,7 @@ void Studio_UI_Delete(USER *User)
 		strcpy_s(key, 20, GET_KEY());
 		if (strcmp(key, "Enter") == 0)
 		{
+			Seat_Srv_DelAll(studio);
 			Studio_Perst_DeleteByID(Studio_ID);
 			EntKey_Perst_CompKeyM();
 			printf_s("É¾³ý³É¹¦");

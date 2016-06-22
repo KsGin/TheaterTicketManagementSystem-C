@@ -150,4 +150,6 @@
 #include "TTMS_SCU_SaleData_UI_Browe.h"
 #include "TTMS_SCU_SaleData_UI_LookByP.h"
 #include "TTMS_SCU_SaleM_UI_Money.h"
+#include "TTMS_SCU_Perst_DelAllSeatByStudioUp.h"
+#include "TTMS_SCU_Srv_DelAllSeatByStudioUp.h"
 // TODO:  在此处引用程序需要的其他头文件

@@ -29,16 +29,10 @@ void Studio_UI_Mod(USER * user)
 		printf_s("座位列数: %d", studio->data.colsCount);
 		TTMS_GotoXY(65, 9);
 		printf_s("新名称:");
-		TTMS_GotoXY(72, 10);
-		printf_s("————————");
 		TTMS_GotoXY(65, 14);
 		printf_s("新座位行数:");
-		TTMS_GotoXY(76, 15);
-		printf_s("————————");
 		TTMS_GotoXY(65, 18);
 		printf_s("新座位列数:");
-		TTMS_GotoXY(76, 19);
-		printf_s("————————");
 		TTMS_GotoXY(72, 9);
 		scanf_s("%s", NewName,30);
 		TTMS_GotoXY(76, 14);

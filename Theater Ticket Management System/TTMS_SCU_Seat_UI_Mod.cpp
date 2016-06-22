@@ -68,7 +68,7 @@ void Seat_UI_Mod(USER * user)
 	}
 	else {
 		TTMS_GotoXY(45, 23);
-		printf_s("无此放映厅,按任意键退出");
+		printf_s("无此座位,按任意键退出");
 		_getch();
 		Seat_UI_MgtEntry(user);
 	}

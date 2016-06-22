@@ -55,7 +55,7 @@ void Schedule_UI_Browe(USER * user, int i)
 	Schedule_UI_LookByPage(p,i);
 	char k[15];
 	strcpy_s(k, 15, GET_KEY());
-	while (strcmp(k, "Enter") != 0)
+	while (strcmp(k, "Esc") != 0)
 	{
 		if (strcmp(k, "Right") == 0 && p <= KeyMaX / 5)
 		{
@@ -67,4 +67,5 @@ void Schedule_UI_Browe(USER * user, int i)
 		}
 		strcpy_s(k, 15, GET_KEY());
 	}
+	TTMS_GotoXY(30, 24);
 }

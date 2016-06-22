@@ -25,6 +25,7 @@ SALE * SaleData_Perst_FetchByID(int ID)
 			fread_s(SaleData_temp, sizeof(SALE), sizeof(SALE), 1, fp);
 			if (SaleData_temp->data.id == ID)
 			{
+				printf_s("%d", SaleData_temp->data.id);
 				fclose(fp);
 				return SaleData_temp;
 			}

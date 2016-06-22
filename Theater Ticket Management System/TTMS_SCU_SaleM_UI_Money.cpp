@@ -24,6 +24,8 @@ void SaleData_UI_Money(USER * user,int power)
 		for (int i = 1; i <= SaleMaxCount; i++)
 		{
 			SALE *sale = SaleData_Srv_FetchByID(i);
+		//	printf_s("%s\n",sale->data.UserAcc);
+		//	_getch();
 			if (sale && !strcmp(sale->data.UserAcc, Sale_User->USER_ACCOUT))
 			{
 				if (sale->data.type == 1)
@@ -86,7 +88,7 @@ void SaleData_UI_Money(USER * user,int power)
 		TTMS_GotoXY(47, 11);
 		printf_s("售票交易额: %d", MoneySale);
 		TTMS_GotoXY(47, 13);
-		printf_s("退票交易额: %d", MoneySale);
+		printf_s("退票交易额: %d", MoneyReturn);
 		TTMS_GotoXY(47, 15);
 		printf_s("售票次数: %d", SaleCount);
 		TTMS_GotoXY(47, 17);

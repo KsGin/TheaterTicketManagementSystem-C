@@ -20,8 +20,6 @@ void Account_UI_Add(USER *Admini)
 	printf_s("售票经理");
 	TTMS_GotoXY(62, 15);
 	printf_s("售票员");
-	TTMS_GotoXY(47,15);
-	printf_s("->");
 	TTMS_GotoXY(55, 9);
 	scanf_s("%s", user->USER_NAME, USER_LEN);
 	TTMS_GotoXY(55, 11);
