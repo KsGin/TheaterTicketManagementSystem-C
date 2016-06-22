@@ -35,6 +35,8 @@ void Main_UI_MgtEntry(USER * user)
 				remove("EntityKeyPlay.dat");
 				remove("Schedule.dat");
 				remove("EntityKeySchedule.dat");
+				remove("EntityKeyTicket.dat");
+				remove("Ticket.dat");
 				TTMS_INITIAL();
 				exit(0);
 			default:
@@ -89,7 +91,7 @@ void Main_UI_MgtEntry(USER * user)
 		if (GET_OC(44, 9, 44, 17, 2, 1, "->", 0, 1) == 1) {
 			switch (GET_CURSOR_Y())
 			{
-			case 9: break;
+			case 9: Sale_UI_Mgt_Entry(user); break;
 			case 11:Sale_UI_ShowSchedule(user); break;
 			case 13:Sale_UI_ShowTicket(user); break;
 			case 15:

@@ -1,16 +1,13 @@
 #include "stdafx.h"
-#include "TTMS_SCU_Sale_UI_ShowTicket.h"
+#include "TTMS_SCU_Ticket_ShowByT.h"
 
-void Sale_UI_ShowTicket(USER * user)
+int Ticket_UI_ShowTicketByT(TICKET * ticket)
 {
 	system("cls");
 	BIOS_GOTO_BOX(22, 100, 5, 25);
 	BIOS_GOTO_BOX(22, 100, 8, 7);
 	TTMS_GotoXY(52, 6);
-	printf_s("请输入查询的演出计划ID:");
-	int ID;
-	scanf_s("%d", &ID);
-	SCHEDULE *schedule = Schedule_Srv_FetchByID(ID);
+	SCHEDULE *schedule = Schedule_Srv_FetchByID(ticket->data.schedule_id);
 	if (!schedule)
 	{
 		TTMS_GotoXY(50, 24);
@@ -45,7 +42,7 @@ void Sale_UI_ShowTicket(USER * user)
 		default:
 			break;
 		}
-		printf_s("名称:%s",play->data.name);
+		printf_s("名称:%s", play->data.name);
 		TTMS_GotoXY(70, 15);
 		printf_s("#适用于");
 		switch (play->data.rating)
@@ -62,15 +59,16 @@ void Sale_UI_ShowTicket(USER * user)
 		STUDIO *studio = Studio_Srv_FetchByID(schedule->data.studio_id);
 		printf_s("%s演出厅", studio->data.name);
 		TTMS_GotoXY(70, 17);
-		printf_s("全片时长:%d分钟",play->data.duration);
+		printf_s("全片时长:%d分钟", play->data.duration);
 		TTMS_GotoXY(33, 19);
 		printf_s("开始时间 %d年%d月%d日%d时%d分", schedule->time.daytime.year, schedule->time.daytime.month, schedule->time.daytime.day, schedule->time.hour, schedule->time.minute);
 		TTMS_GotoXY(73, 19);
-		printf_s("票价:￥%d",play->data.price);
-		
+		printf_s("票价:￥%d", play->data.price);
+		SEAT *seat = Seat_Srv_FetchByID(ticket->data.seat_id);
+		TTMS_GotoXY(67, 13);
+		printf_s("##%d排%d列##", seat->data.row, seat->data.col);
+
 	}
 	_getch();
+	return 0;
 }
-
-
-

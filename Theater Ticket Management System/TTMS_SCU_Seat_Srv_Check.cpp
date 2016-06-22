@@ -7,7 +7,7 @@ int Seat_Srv_CheckReapt(SEAT * seat)
 	for (int i = 1; i <= IDMax; i++)
 	{
 		SEAT *temp = Seat_Srv_FetchByID(i);
-		if (temp->data.RoomID == seat->data.RoomID && temp->data.row == seat->data.row && seat->data.col == temp->data.col)
+		if (temp && temp->data.RoomID == seat->data.RoomID && temp->data.row == seat->data.row && seat->data.col == temp->data.col)
 		{
 			return 1;
 		}

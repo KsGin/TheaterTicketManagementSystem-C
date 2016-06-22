@@ -157,6 +157,8 @@
     <ClInclude Include="TTMS_SCU_EntKeyPlay_Perst_CompKeyM.h" />
     <ClInclude Include="TTMS_SCU_EntKeyPlay_Perst_CompKeyP.h" />
     <ClInclude Include="TTMS_SCU_EntKeyPlay_Perst_CompNewKeys.h" />
+    <ClInclude Include="TTMS_SCU_EntKeySale_Perst_CompKeyM.h" />
+    <ClInclude Include="TTMS_SCU_EntKeySale_Perst_CompKeyP.h" />
     <ClInclude Include="TTMS_SCU_EntKeySche_Perst_CompKeyM.h" />
     <ClInclude Include="TTMS_SCU_EntKeySche_Perst_CompKeyP.h" />
     <ClInclude Include="TTMS_SCU_EntKeySche_Perst_CompNewKeys.h" />
@@ -186,8 +188,12 @@
     <ClInclude Include="TTMS_SCU_Account_UI_QUE.h" />
     <ClInclude Include="TTMS_SCU_EntKeySeat_Perst_ComNewKey.h" />
     <ClInclude Include="TTMS_SCU_EntKeySeat_Perst_CompKeyM.h" />
+    <ClInclude Include="TTMS_SCU_EntKeyTicket_Perst_CompKeyM.h" />
+    <ClInclude Include="TTMS_SCU_EntKeyTicket_Perst_CompKeyP.h" />
+    <ClInclude Include="TTMS_SCU_EntKey_Sale_CompNewKeys.h" />
     <ClInclude Include="TTMS_SCU_EntKey_Srv_CompNewKey.h" />
     <ClInclude Include="TTMS_SCU_EntKey_Perst_CompNewKeys.h" />
+    <ClInclude Include="TTMS_SCU_EntKey_Ticket_CompNewKeys.h" />
     <ClInclude Include="TTMS_SCU_Main_UI_MgtEnt.h" />
     <ClInclude Include="TTMS_SCU_Account_UI_MgtEnt.h" />
     <ClInclude Include="TTMS_SCU_Login.h" />
@@ -208,6 +214,8 @@
     <ClInclude Include="TTMS_SCU_Play_UI_LookByP.h" />
     <ClInclude Include="TTMS_SCU_Play_UI_MgtEnt.h" />
     <ClInclude Include="TTMS_SCU_Play_UI_Mod.h" />
+    <ClInclude Include="TTMS_SCU_Sale_Srv_Info.h" />
+    <ClInclude Include="TTMS_SCU_Sale_UI_MgtEnt.h" />
     <ClInclude Include="TTMS_SCU_Sale_UI_ShowSchedule.h" />
     <ClInclude Include="TTMS_SCU_Sale_UI_ShowTicket.h" />
     <ClInclude Include="TTMS_SCU_Schedule_Perst_Del.h" />
@@ -227,6 +235,7 @@
     <ClInclude Include="TTMS_SCU_Sche_Perst_FetchByID.h" />
     <ClInclude Include="TTMS_SCU_Sche_Srv_FetchByID.h" />
     <ClInclude Include="TTMS_SCU_Seat_Perst_Del.h" />
+    <ClInclude Include="TTMS_SCU_Seat_Perst_FetchByRC.h" />
     <ClInclude Include="TTMS_SCU_Seat_Perst_Insert.h" />
     <ClInclude Include="TTMS_SCU_Seat_Perst_FetchByID.h" />
     <ClInclude Include="TTMS_SCU_Seat_Perst_Mod.h" />
@@ -235,6 +244,7 @@
     <ClInclude Include="TTMS_SCU_Seat_Srv_FetchByID.h" />
     <ClInclude Include="TTMS_SCU_Seat_Srv_Info.h" />
     <ClInclude Include="TTMS_SCU_Seat_Srv_Mod.h" />
+    <ClInclude Include="TTMS_SCU_Seat_Srv_StatusC.h" />
     <ClInclude Include="TTMS_SCU_Seat_UI_Add.h" />
     <ClInclude Include="TTMS_SCU_Seat_UI_Browe.h" />
     <ClInclude Include="TTMS_SCU_Seat_UI_Del.h" />
@@ -256,6 +266,13 @@
     <ClInclude Include="TTMS_SCU_Studio_UI_LookByP.h" />
     <ClInclude Include="TTMS_SCU_Studio_UI_MgtEnt.h" />
     <ClInclude Include="TTMS_SCU_Studio_UI_Mod.h" />
+    <ClInclude Include="TTMS_SCU_Ticket_Perst_FetchByID.h" />
+    <ClInclude Include="TTMS_SCU_Ticket_Perst_FetchByRC.h" />
+    <ClInclude Include="TTMS_SCU_Ticket_ShowByT.h" />
+    <ClInclude Include="TTMS_SCU_Ticket_Srv_Add.h" />
+    <ClInclude Include="TTMS_SCU_Ticket_Perst_Insert.h" />
+    <ClInclude Include="TTMS_SCU_Ticket_Srv_Info.h" />
+    <ClInclude Include="TTMS_SCU_Ticket_Srv_StatusC.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BIOS_GOTO_BOX.cpp" />
@@ -275,6 +292,8 @@
     <ClCompile Include="TTMS_SCU_EntKeyPlay_Perst_CompKeyM.cpp" />
     <ClCompile Include="TTMS_SCU_EntKeyPlay_Perst_CompKeyP.cpp" />
     <ClCompile Include="TTMS_SCU_EntKeyPlay_Perst_CompNewKeys.cpp" />
+    <ClCompile Include="TTMS_SCU_EntKeySale_Perst_CompKeyM.cpp" />
+    <ClCompile Include="TTMS_SCU_EntKeySale_Perst_CompKeyP.cpp" />
     <ClCompile Include="TTMS_SCU_EntKeySche_Perst_CompKeyM.cpp" />
     <ClCompile Include="TTMS_SCU_EntKeySche_Perst_CompKeyP.cpp" />
     <ClCompile Include="TTMS_SCU_EntKeySche_Perst_CompNewKeys.cpp" />
@@ -304,8 +323,12 @@
     <ClCompile Include="TTMS_SCU_Account_UI_QUE.cpp" />
     <ClCompile Include="TTMS_SCU_EntKeySeat_Perst_ComNewKey.cpp" />
     <ClCompile Include="TTMS_SCU_EntKeySeat_Perst_CompKeyM.cpp" />
+    <ClCompile Include="TTMS_SCU_EntKeyTicket_Perst_CompKeyM.cpp" />
+    <ClCompile Include="TTMS_SCU_EntKeyTicket_Perst_CompKeyP.cpp" />
+    <ClCompile Include="TTMS_SCU_EntKey_Sale_CompNewKeys.cpp" />
     <ClCompile Include="TTMS_SCU_EntKey_Srv_CompNewKey.cpp" />
     <ClCompile Include="TTMS_SCU_EntKey_Perst_CompNewKeys.cpp" />
+    <ClCompile Include="TTMS_SCU_EntKey_Ticket_CompNewKeys.cpp" />
     <ClCompile Include="TTMS_SCU_Main_UI_MgtEnt.cpp" />
     <ClCompile Include="TTMS_SCU_Account_UI_MgtEnt.cpp" />
     <ClCompile Include="TTMS_SCU_Login.cpp" />
@@ -324,6 +347,7 @@
     <ClCompile Include="TTMS_SCU_Play_UI_LookByP.cpp" />
     <ClCompile Include="TTMS_SCU_Play_UI_MgtEnt.cpp" />
     <ClCompile Include="TTMS_SCU_Play_UI_Mod.cpp" />
+    <ClCompile Include="TTMS_SCU_Sale_UI_MgtEnt.cpp" />
     <ClCompile Include="TTMS_SCU_Sale_UI_ShowSchedule.cpp" />
     <ClCompile Include="TTMS_SCU_Sale_UI_ShowTicket.cpp" />
     <ClCompile Include="TTMS_SCU_Schedule_Perst_Del.cpp" />
@@ -342,6 +366,7 @@
     <ClCompile Include="TTMS_SCU_Sche_Perst_FetchByID.cpp" />
     <ClCompile Include="TTMS_SCU_Sche_Srv_FetchByID.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_Perst_Del.cpp" />
+    <ClCompile Include="TTMS_SCU_Seat_Perst_FetchByRC.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_Perst_Insert.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_Perst_FetchByID.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_Perst_Mod.cpp" />
@@ -349,6 +374,7 @@
     <ClCompile Include="TTMS_SCU_Seat_Srv_Check.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_Srv_FetchByID.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_Srv_Mod.cpp" />
+    <ClCompile Include="TTMS_SCU_Seat_Srv_StatusC.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_UI_Add.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_UI_Browe.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_UI_Del.cpp" />
@@ -369,6 +395,12 @@
     <ClCompile Include="TTMS_SCU_Studio_UI_LookByP.cpp" />
     <ClCompile Include="TTMS_SCU_Studio_UI_MgtEnt.cpp" />
     <ClCompile Include="TTMS_SCU_Studio_UI_Mod.cpp" />
+    <ClCompile Include="TTMS_SCU_Ticket_Perst_FetchByID.cpp" />
+    <ClCompile Include="TTMS_SCU_Ticket_Perst_FetchByRC.cpp" />
+    <ClCompile Include="TTMS_SCU_Ticket_ShowByT.cpp" />
+    <ClCompile Include="TTMS_SCU_Ticket_Srv_Add.cpp" />
+    <ClCompile Include="TTMS_SCU_Ticket_Perst_Insert.cpp" />
+    <ClCompile Include="TTMS_SCU_Ticket_Srv_StatusC.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

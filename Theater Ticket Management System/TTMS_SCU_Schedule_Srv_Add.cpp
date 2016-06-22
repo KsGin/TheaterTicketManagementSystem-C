@@ -11,6 +11,7 @@ int Schedule_Srv_Add(SCHEDULE * schedule)
 		schedule->data.id = EntKeySchedule_Perst_CompNewKeys() + 1;
 		Schedule_Perst_Insert(schedule);
 		EntKeySchedule_Perst_CompKeyP();
+		Ticket_StatusC(schedule);
 	}
 	return 1;
 }

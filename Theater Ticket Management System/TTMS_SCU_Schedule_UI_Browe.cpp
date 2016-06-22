@@ -46,3 +46,25 @@ void Schedule_UI_Browe(USER * user, int arr[],int indexMax)
 	}
 	Main_UI_MgtEntry(user);
 }
+
+void Schedule_UI_Browe(USER * user, int i)
+{
+	int p = 1;
+	system("cls");
+	int KeyMaX = EntKeySchedule_Perst_CompNewKeys() - 1;
+	Schedule_UI_LookByPage(p,i);
+	char k[15];
+	strcpy_s(k, 15, GET_KEY());
+	while (strcmp(k, "Esc") != 0)
+	{
+		if (strcmp(k, "Right") == 0 && p <= KeyMaX / 5)
+		{
+			Schedule_UI_LookByPage(++p,i);
+		}
+		if (strcmp(k, "Left") == 0 && p > 1)
+		{
+			Schedule_UI_LookByPage(--p,i);
+		}
+		strcpy_s(k, 15, GET_KEY());
+	}
+}

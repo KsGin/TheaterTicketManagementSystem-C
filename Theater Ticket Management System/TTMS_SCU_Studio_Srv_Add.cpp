@@ -8,4 +8,5 @@ void Studio_Srv_Add(STUDIO * studio)
 	studio->prev = nullptr;
 	Studio_Perst_Insert(studio);
 	EntKey_Perst_CompKeyP();
+	Seat_Srv_StatusC(studio);
 }

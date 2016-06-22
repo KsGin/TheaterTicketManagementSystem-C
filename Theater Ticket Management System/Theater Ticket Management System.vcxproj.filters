@@ -300,9 +300,6 @@
     <ClInclude Include="TTMS_SCU_Play_Perst_Del.h">
       <Filter>头文件\Persistent</Filter>
     </ClInclude>
-    <ClInclude Include="TTMS_SCU_Play_Srv_FetchById.h">
-      <Filter>源文件\Service</Filter>
-    </ClInclude>
     <ClInclude Include="TTMS_SCU_Play_Srv_Mod.h">
       <Filter>头文件\Service</Filter>
     </ClInclude>
@@ -373,6 +370,60 @@
       <Filter>头文件\View</Filter>
     </ClInclude>
     <ClInclude Include="TTMS_SCU_Sale_UI_ShowSchedule.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Sale_UI_MgtEnt.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Ticket_Srv_Info.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Sale_Srv_Info.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_EntKey_Ticket_CompNewKeys.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_EntKey_Sale_CompNewKeys.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_EntKeySale_Perst_CompKeyM.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_EntKeyTicket_Perst_CompKeyM.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_EntKeySale_Perst_CompKeyP.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_EntKeyTicket_Perst_CompKeyP.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Ticket_Srv_StatusC.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Ticket_Perst_Insert.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Play_Srv_FetchById.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Ticket_Srv_Add.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Seat_Srv_StatusC.h">
+      <Filter>头文件\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Seat_Perst_FetchByRC.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Ticket_Perst_FetchByRC.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Ticket_Perst_FetchByID.h">
+      <Filter>头文件\Persistent</Filter>
+    </ClInclude>
+    <ClInclude Include="TTMS_SCU_Ticket_ShowByT.h">
       <Filter>头文件\View</Filter>
     </ClInclude>
   </ItemGroup>
@@ -693,6 +744,51 @@
       <Filter>源文件\View</Filter>
     </ClCompile>
     <ClCompile Include="TTMS_SCU_Sale_UI_ShowSchedule.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Sale_UI_MgtEnt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_EntKey_Sale_CompNewKeys.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_EntKey_Ticket_CompNewKeys.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_EntKeySale_Perst_CompKeyM.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_EntKeySale_Perst_CompKeyP.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_EntKeyTicket_Perst_CompKeyM.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_EntKeyTicket_Perst_CompKeyP.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Ticket_Srv_Add.cpp">
+      <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Ticket_Srv_StatusC.cpp">
+      <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Seat_Srv_StatusC.cpp">
+      <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Ticket_Perst_Insert.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Seat_Perst_FetchByRC.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Ticket_Perst_FetchByID.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Ticket_Perst_FetchByRC.cpp">
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Ticket_ShowByT.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
