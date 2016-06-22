@@ -120,4 +120,6 @@
 #include "TTMS_SCU_Schedule_Perst_Mod.h"
 #include "TTMS_SCU_Schedule_Srv_Mod.h"
 #include "TTMS_SCU_Schedule_UI_Mod.h"
+#include "TTMS_SCU_Sale_UI_ShowTicket.h"
+#include "TTMS_SCU_Sale_UI_ShowSchedule.h"
 // TODO:  在此处引用程序需要的其他头文件

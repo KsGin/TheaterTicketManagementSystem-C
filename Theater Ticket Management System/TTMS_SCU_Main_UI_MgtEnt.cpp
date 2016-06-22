@@ -33,6 +33,8 @@ void Main_UI_MgtEntry(USER * user)
 				remove("EntityKeySeat.dat");
 				remove("Play.dat");
 				remove("EntityKeyPlay.dat");
+				remove("Schedule.dat");
+				remove("EntityKeySchedule.dat");
 				TTMS_INITIAL();
 				exit(0);
 			default:
@@ -60,8 +62,8 @@ void Main_UI_MgtEntry(USER * user)
 			switch (GET_CURSOR_Y())
 			{
 			case 9: Play_UI_MgtEntry(user); break;
-			case 11: break;
-			case 13:break;
+			case 11:Sale_UI_ShowSchedule(user);  break;
+			case 13:Sale_UI_ShowTicket(user); break;
 			case 15:break;
 			case 17:break;
 			case 19:Account_UI_ModPassword(user); break;
@@ -81,20 +83,17 @@ void Main_UI_MgtEntry(USER * user)
 		TTMS_GotoXY(47, 13);
 		printf_s("No3:查询演出票");
 		TTMS_GotoXY(47, 15);
-		printf_s("No4:分析销售数据");
+		printf_s("No4:统计销售额");
 		TTMS_GotoXY(47, 17);
-		printf_s("No5:统计销售额");
-		TTMS_GotoXY(47, 19);
 		printf_s("No5:修改密码");
-		if (GET_OC(44, 9, 44, 19, 2, 1, "->", 0, 1) == 1) {
+		if (GET_OC(44, 9, 44, 17, 2, 1, "->", 0, 1) == 1) {
 			switch (GET_CURSOR_Y())
 			{
 			case 9: break;
-			case 11: break;
-			case 13:
+			case 11:Sale_UI_ShowSchedule(user); break;
+			case 13:Sale_UI_ShowTicket(user); break;
 			case 15:
-			case 17:
-			case 19:Account_UI_ModPassword(user); break;
+			case 17:Account_UI_ModPassword(user); break;
 			default:
 				break;
 			}

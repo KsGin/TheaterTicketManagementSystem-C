@@ -12,12 +12,15 @@ void Studio_UI_add(USER *user)
 	printf_s("增加演出厅");
 	TTMS_GotoXY(47, 9);
 	printf_s("演出厅名称:");
-	scanf_s("%s", studio_add->data.name, 30);
 	TTMS_GotoXY(47, 11);
 	printf_s("演出厅座位行数:");
-	scanf_s("%d", &studio_add->data.rowsCount);
 	TTMS_GotoXY(47, 13);
 	printf_s("演出厅座位列数:");
+	TTMS_GotoXY(59, 9);
+	scanf_s("%s", studio_add->data.name, 30);
+	TTMS_GotoXY(63, 11);
+	scanf_s("%d", &studio_add->data.rowsCount);
+	TTMS_GotoXY(63, 13);
 	scanf_s("%d", &studio_add->data.colsCount);
 	studio_add->data.id = EntKey_Srv_CompNewKey();
 	Studio_Srv_Add(studio_add);

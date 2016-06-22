@@ -208,6 +208,8 @@
     <ClInclude Include="TTMS_SCU_Play_UI_LookByP.h" />
     <ClInclude Include="TTMS_SCU_Play_UI_MgtEnt.h" />
     <ClInclude Include="TTMS_SCU_Play_UI_Mod.h" />
+    <ClInclude Include="TTMS_SCU_Sale_UI_ShowSchedule.h" />
+    <ClInclude Include="TTMS_SCU_Sale_UI_ShowTicket.h" />
     <ClInclude Include="TTMS_SCU_Schedule_Perst_Del.h" />
     <ClInclude Include="TTMS_SCU_Schedule_Perst_Insert.h" />
     <ClInclude Include="TTMS_SCU_Schedule_Perst_Mod.h" />
@@ -322,6 +324,8 @@
     <ClCompile Include="TTMS_SCU_Play_UI_LookByP.cpp" />
     <ClCompile Include="TTMS_SCU_Play_UI_MgtEnt.cpp" />
     <ClCompile Include="TTMS_SCU_Play_UI_Mod.cpp" />
+    <ClCompile Include="TTMS_SCU_Sale_UI_ShowSchedule.cpp" />
+    <ClCompile Include="TTMS_SCU_Sale_UI_ShowTicket.cpp" />
     <ClCompile Include="TTMS_SCU_Schedule_Perst_Del.cpp" />
     <ClCompile Include="TTMS_SCU_Schedule_Perst_Insert.cpp" />
     <ClCompile Include="TTMS_SCU_Schedule_Perst_Mod.cpp" />

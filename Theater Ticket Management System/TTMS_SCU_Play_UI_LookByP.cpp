@@ -35,7 +35,7 @@ void Play_UI_LookByPage(int Page)
 		}
 		TTMS_GotoXY(24, 9 + (i - 5 * (Page - 1) - 1) * 3);
 		printf_s("%d", play->data.id);
-		TTMS_GotoXY(45, 9 + (i - 5 * (Page - 1) - 1) * 3);
+		TTMS_GotoXY(39, 9 + (i - 5 * (Page - 1) - 1) * 3);
 		printf_s("%s", play->data.name);
 		TTMS_GotoXY(70, 9 + (i - 5 * (Page - 1) - 1) * 3);
 		printf_s("%s", play->data.area);
