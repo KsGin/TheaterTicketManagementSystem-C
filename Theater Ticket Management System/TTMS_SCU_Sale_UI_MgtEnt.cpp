@@ -5,8 +5,7 @@ void Sale_UI_Mgt_Entry(USER * user)
 	Schedule_UI_Browe(user,1);
 	TTMS_GotoXY(48, 27);
 	printf_s("按任意键进入销售管理");
-	Sale_UI_ShowTicket(user);
-	TTMS_GotoXY(43, 24);
+	TTMS_GotoXY(43, 27);
 	printf_s("请输入交易类型(售票 = 1,退票 = 0):");
 	int chiose = (int)(_getch()- 48);
 	if (chiose == 1)
@@ -40,9 +39,10 @@ void Sale_UI_Mgt_Entry(USER * user)
 		TICKET *ticket;
 		ticket = (TICKET*)malloc(sizeof(TICKET));
 		ticket->data.id = Ticket_Perst_FetchBySS(ScheduleID,Seat_Perst_FetchByRC(SeatRowCount, SeatColCount,schedule->data.studio_id));
-		ticket = Ticket_Perst_FetchByID(ticket->data.id);
+		ticket = Ticket_Perst_FetchByID(schedule->data.studio_id);
 		if (ticket)
 		{
+			_getch();
 			ticket->data.seat_id = Seat_Perst_FetchByRC(SeatRowCount, SeatColCount, schedule->data.studio_id);
 			Ticket_UI_ShowTicketByT(ticket);
 		}

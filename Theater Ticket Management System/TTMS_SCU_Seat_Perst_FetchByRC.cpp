@@ -23,7 +23,7 @@ int Seat_Perst_FetchByRC(int Row, int Col, int studioID)
 		{
 			seat_temp = (SEAT *)malloc(sizeof(SEAT));
 			fread_s(seat_temp, sizeof(SEAT), sizeof(SEAT), 1, fp);
-			if (seat_temp->data.col == Col && seat_temp->data.row == Row && seat_temp->data.RoomID == studioID);
+			if (seat_temp->data.col == Col && seat_temp->data.row == Row && seat_temp->data.RoomID == studioID)
 			{
 				fclose(fp);
 				return seat_temp->data.id;

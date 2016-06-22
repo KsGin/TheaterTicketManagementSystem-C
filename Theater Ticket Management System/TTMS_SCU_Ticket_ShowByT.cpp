@@ -67,7 +67,6 @@ int Ticket_UI_ShowTicketByT(TICKET * ticket)
 		SEAT *seat = Seat_Srv_FetchByID(ticket->data.seat_id);
 		TTMS_GotoXY(67, 13);
 		printf_s("##%dÅÅ%dÁĞ##", seat->data.row, seat->data.col);
-
 	}
 	_getch();
 	return 0;
