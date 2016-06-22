@@ -11,6 +11,7 @@ void Ticket_StatusC(SCHEDULE *schedule)
 		PLAY *play = Play_Srv_FetchByID(schedule->data.play_id);
 		ticket->data.price = play->data.price;
 		ticket->data.status = TICKET_AVL;
+		ticket->data.seat_id = i + 1;
 		Ticket_Srv_Add(ticket);
 	}
 }

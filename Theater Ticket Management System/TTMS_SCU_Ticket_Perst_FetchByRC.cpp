@@ -23,8 +23,9 @@ int Ticket_Perst_FetchBySS(int ScheduleID, int SeatID)
 		{
 			ticket_temp = (TICKET *)malloc(sizeof(TICKET));
 			fread_s(ticket_temp, sizeof(TICKET), sizeof(TICKET), 1, fp);
-			if (ticket_temp->data.schedule_id == ScheduleID && ticket_temp->data.seat_id)
+			if (ticket_temp->data.schedule_id == ScheduleID && ticket_temp->data.seat_id == SeatID)
 			{
+			//	printf_s("%d  %d\n", ticket_temp->data.id, ticket_temp->data.seat_id);
 				fclose(fp);
 				return ticket_temp->data.id;
 			}

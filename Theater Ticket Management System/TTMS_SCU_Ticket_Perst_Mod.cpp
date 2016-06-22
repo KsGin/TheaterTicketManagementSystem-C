@@ -16,7 +16,7 @@ int Ticket_Perst_ModStatus(TICKET *ticket)
 			fwrite(ticket, sizeof(TICKET), 1, tempfp);
 		}
 		else {
-			fwrite(ticket, sizeof(TICKET), 1, tempfp);
+			fwrite(temp, sizeof(TICKET), 1, tempfp);
 		}
 	}
 	fclose(fp);

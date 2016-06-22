@@ -214,6 +214,13 @@
     <ClInclude Include="TTMS_SCU_Play_UI_LookByP.h" />
     <ClInclude Include="TTMS_SCU_Play_UI_MgtEnt.h" />
     <ClInclude Include="TTMS_SCU_Play_UI_Mod.h" />
+    <ClInclude Include="TTMS_SCU_SaleData_Perst_FetchByID.h" />
+    <ClInclude Include="TTMS_SCU_SaleData_Perst_FetchByUser.h" />
+    <ClInclude Include="TTMS_SCU_SaleData_Srv_FetchByID.h" />
+    <ClInclude Include="TTMS_SCU_SaleData_UI_Analysis.h" />
+    <ClInclude Include="TTMS_SCU_SaleData_UI_Browe.h" />
+    <ClInclude Include="TTMS_SCU_SaleData_UI_LookByP.h" />
+    <ClInclude Include="TTMS_SCU_SaleM_UI_Money.h" />
     <ClInclude Include="TTMS_SCU_Sale_Perst_Insert.h" />
     <ClInclude Include="TTMS_SCU_Sale_Srv_Return.h" />
     <ClInclude Include="TTMS_SCU_Ticket_Perst_Mod.h" />
@@ -351,6 +358,13 @@
     <ClCompile Include="TTMS_SCU_Play_UI_LookByP.cpp" />
     <ClCompile Include="TTMS_SCU_Play_UI_MgtEnt.cpp" />
     <ClCompile Include="TTMS_SCU_Play_UI_Mod.cpp" />
+    <ClCompile Include="TTMS_SCU_SaleData_Perst_FetchByID.cpp" />
+    <ClCompile Include="TTMS_SCU_SaleData_Perst_FetchByUser.cpp" />
+    <ClCompile Include="TTMS_SCU_SaleData_Srv_FetchByID.cpp" />
+    <ClCompile Include="TTMS_SCU_SaleData_UI_Analysis.cpp" />
+    <ClCompile Include="TTMS_SCU_SaleData_UI_Browe.cpp" />
+    <ClCompile Include="TTMS_SCU_SaleData_UI_LookByP.cpp" />
+    <ClCompile Include="TTMS_SCU_SaleM_UI_Money.cpp" />
     <ClCompile Include="TTMS_SCU_Sale_Perst_Insert.cpp" />
     <ClCompile Include="TTMS_SCU_Sale_Srv_Return.cpp" />
     <ClCompile Include="TTMS_SCU_Ticket_Perst_Mod.cpp" />

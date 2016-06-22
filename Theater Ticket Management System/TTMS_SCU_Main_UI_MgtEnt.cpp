@@ -37,6 +37,8 @@ void Main_UI_MgtEntry(USER * user)
 				remove("EntityKeySchedule.dat");
 				remove("EntityKeyTicket.dat");
 				remove("Ticket.dat");
+				remove("EntityKeySale.dat");
+				remove("Sale.dat");
 				TTMS_INITIAL();
 				exit(0);
 			default:
@@ -66,8 +68,8 @@ void Main_UI_MgtEntry(USER * user)
 			case 9: Play_UI_MgtEntry(user); break;
 			case 11:Sale_UI_ShowSchedule(user);  break;
 			case 13:Sale_UI_ShowTicket(user); break;
-			case 15:break;
-			case 17:break;
+			case 15:SaleData_UI_Analysis(user); break;
+			case 17:SaleData_UI_Money(user, user->power); break;
 			case 19:Account_UI_ModPassword(user); break;
 			default:
 				break;
@@ -94,7 +96,7 @@ void Main_UI_MgtEntry(USER * user)
 			case 9: Sale_UI_Mgt_Entry(user); break;
 			case 11:Sale_UI_ShowSchedule(user); break;
 			case 13:Sale_UI_ShowTicket(user); break;
-			case 15:
+			case 15:SaleData_UI_Money(user, user->power); break;
 			case 17:Account_UI_ModPassword(user); break;
 			default:
 				break;

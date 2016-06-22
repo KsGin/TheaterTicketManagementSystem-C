@@ -144,4 +144,10 @@
 #include "TTMS_SCU_Sale_Perst_Insert.h"
 #include "TTMS_SCU_Ticket_Perst_Mod.h"
 #include "TTMS_SCU_Sale_Srv_Return.h"
+#include "TTMS_SCU_SaleData_UI_Analysis.h"
+#include "TTMS_SCU_SaleData_Perst_FetchByID.h"
+#include "TTMS_SCU_SaleData_Srv_FetchByID.h"
+#include "TTMS_SCU_SaleData_UI_Browe.h"
+#include "TTMS_SCU_SaleData_UI_LookByP.h"
+#include "TTMS_SCU_SaleM_UI_Money.h"
 // TODO:  在此处引用程序需要的其他头文件
