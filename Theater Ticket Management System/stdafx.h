@@ -140,4 +140,8 @@
 #include "TTMS_SCU_Seat_Perst_FetchByRC.h"
 #include "TTMS_SCU_Ticket_Perst_FetchByID.h"
 #include "TTMS_SCU_Ticket_ShowByT.h"
+#include "TTMS_SCU_Sale_Srv_Sale.h"
+#include "TTMS_SCU_Sale_Perst_Insert.h"
+#include "TTMS_SCU_Ticket_Perst_Mod.h"
+#include "TTMS_SCU_Sale_Srv_Return.h"
 // TODO:  在此处引用程序需要的其他头文件

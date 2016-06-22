@@ -30,7 +30,7 @@ int Ticket_UI_ShowTicketByT(TICKET * ticket)
 		}
 		TTMS_GotoXY(92, 21);
 		printf_s("*");
-		TTMS_GotoXY(55, 13);
+		TTMS_GotoXY(45, 13);
 		printf_s("没人来剧院");
 		TTMS_GotoXY(33, 15);
 		PLAY *play = Play_Srv_FetchByID(schedule->data.play_id);
@@ -65,7 +65,7 @@ int Ticket_UI_ShowTicketByT(TICKET * ticket)
 		TTMS_GotoXY(73, 19);
 		printf_s("票价:￥%d", play->data.price);
 		SEAT *seat = Seat_Srv_FetchByID(ticket->data.seat_id);
-		TTMS_GotoXY(67, 13);
+		TTMS_GotoXY(71, 13);
 		printf_s("##%d排%d列##", seat->data.row, seat->data.col);
 	}
 	_getch();
