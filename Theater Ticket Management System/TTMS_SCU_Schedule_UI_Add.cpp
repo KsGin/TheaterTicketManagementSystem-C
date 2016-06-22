@@ -52,7 +52,7 @@ void Schedule_UI_Add(USER * user)
 		_getch();
 		Schedule_UI_MgtEntry(user);
 	}
-	TTMS_GotoXY(48, 18);
+	TTMS_GotoXY(48, 20);
 	printf_s("添加成功,任意键返回");
 	_getch();
 	Schedule_UI_MgtEntry(user);

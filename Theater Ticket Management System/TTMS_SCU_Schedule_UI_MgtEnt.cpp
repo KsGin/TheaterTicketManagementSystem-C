@@ -26,9 +26,9 @@ void Schedule_UI_MgtEntry(USER * user)
 		switch (GET_CURSOR_Y())
 		{
 		case 9: Schedule_UI_Add(user); break;
-		case 11: break;
-		case 13: break;
-		case 15: break;
+		case 11:Schedule_UI_Mod(user); break;
+		case 13:Schedule_UI_Delete(user); break;
+		case 15:Schedule_UI_Browe(user); break;
 		default:
 			break;
 		}

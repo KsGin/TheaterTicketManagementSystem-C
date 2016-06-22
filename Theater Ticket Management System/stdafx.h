@@ -112,4 +112,12 @@
 #include "TTMS_SCU_Schedule_Perst_Insert.h"
 #include "TTMS_SCU_Schedule_Srv_Add.h"
 #include "TTMS_SCU_Schedule_UI_Add.h"
+#include "TTMS_SCU_Schedule_Srv_Del.h"
+#include "TTMS_SCU_Schedule_Perst_Del.h"
+#include "TTMS_SCU_Schedule_UI_Del.h"
+#include "TTMS_SCU_Schedule_UI_Browe.h"
+#include "TTMS_SCU_Schedule_UI_LookByP.h"
+#include "TTMS_SCU_Schedule_Perst_Mod.h"
+#include "TTMS_SCU_Schedule_Srv_Mod.h"
+#include "TTMS_SCU_Schedule_UI_Mod.h"
 // TODO:  在此处引用程序需要的其他头文件
