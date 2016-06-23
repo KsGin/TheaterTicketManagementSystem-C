@@ -127,10 +127,13 @@ void Sale_UI_Mgt_Entry(USER * user)
 			Sale_UI_Mgt_Entry(user);
 		}
 		ticket = (TICKET*)malloc(sizeof(TICKET));
-		ticket->data.id = Ticket_Perst_FetchBySS(ScheduleID, Seat_Perst_FetchByRC(SeatRowCount, SeatColCount, schedule->data.studio_id));
-		ticket = Ticket_Perst_FetchByID(schedule->data.studio_id);
+		ticket->data.id = Ticket_Perst_FetchBySS(ScheduleID, seat_id);
+	//	printf_s("%d", ticket->data.id);
+		ticket = Ticket_Perst_FetchByID(ticket->data.id);
 		if (ticket)
 		{
+	//		printf_s("%d", ticket->data.id);
+	//		_getch();
 			if (ticket->data.status == TICKET_AVL)
 			{
 				TTMS_GotoXY(48, 24);
@@ -138,7 +141,7 @@ void Sale_UI_Mgt_Entry(USER * user)
 				_getch();
 				Sale_UI_Mgt_Entry(user);
 			}
-			ticket->data.seat_id = Seat_Perst_FetchByRC(SeatRowCount, SeatColCount, schedule->data.studio_id);
+			ticket->data.seat_id = seat_id;
 			Ticket_UI_ShowTicketByT(ticket);
 			TTMS_GotoXY(55, 24);
 			printf_s("EnterÈ·ÈÏÍËÆ±");

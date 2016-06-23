@@ -9,7 +9,7 @@ void Sale_Srv_SaleO(TICKET * ticket, USER *user)
 	Ticket_Perst_ModStatus(ticket);
 	SALE *sale;
 	sale = (SALE*)malloc(sizeof(SALE));
-	sale->data.id = EntKeySale_Perst_CompNewKeys()+1;
+	sale->data.id = EntKeySale_Perst_CompNewKeys();
 	sale->data.ticket_id = ticket->data.id;
 	sale->data.type = SALE_SELL;
 	strcpy_s(sale->data.UserAcc,15, user->USER_ACCOUT);

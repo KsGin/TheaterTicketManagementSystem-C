@@ -38,9 +38,9 @@ int Ticket_UI_ShowTicketByT(TICKET * ticket)
 		PLAY *play = Play_Srv_FetchByID(schedule->data.play_id);
 		switch (play->data.type)
 		{
-		case PLAY_TYPE_FLIM:printf_s("电影");
-		case PLAY_TYPE_OPEAR:printf_s("歌剧");
-		case PLAY_TYPE_CONCERT:printf_s("音乐会");
+		case PLAY_TYPE_FLIM:printf_s("电影"); break;
+		case PLAY_TYPE_OPEAR:printf_s("歌剧"); break;
+		case PLAY_TYPE_CONCERT:printf_s("音乐会"); break;
 		default:
 			break;
 		}
@@ -49,9 +49,9 @@ int Ticket_UI_ShowTicketByT(TICKET * ticket)
 		printf_s("#适用于");
 		switch (play->data.rating)
 		{
-		case PLAY_RATE_CHILD:printf_s("儿童");
-		case PLAY_RATE_TEENAGE:printf_s("青年");
-		case PLAY_RATE_ADULT:printf_s("成人");
+		case PLAY_RATE_CHILD:printf_s("儿童"); break;
+		case PLAY_RATE_TEENAGE:printf_s("青年"); break;
+		case PLAY_RATE_ADULT:printf_s("成人"); break;
 		default:
 			break;
 		}

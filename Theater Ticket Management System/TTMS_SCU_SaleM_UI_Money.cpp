@@ -28,13 +28,13 @@ void SaleData_UI_Money(USER * user,int power)
 		//	_getch();
 			if (sale && !strcmp(sale->data.UserAcc, Sale_User->USER_ACCOUT))
 			{
-				if (sale->data.type == 1)
+				if (sale->data.type == SALE_SELL)
 				{
 					MoneyMax += sale->data.value;
 					MoneySale += sale->data.value;
 					SaleCount += 1;
 				}
-				else if (sale->data.type == -1)
+				else if (sale->data.type == SALE_RETURN)
 				{
 					MoneyMax += sale->data.value;
 					MoneyReturn += sale->data.value;
@@ -67,13 +67,15 @@ void SaleData_UI_Money(USER * user,int power)
 			SALE *sale = SaleData_Srv_FetchByID(i);
 			if (sale && !strcmp(sale->data.UserAcc, user->USER_ACCOUT))
 			{
-				if (sale->data.type == 1)
+			//	printf_s("%d", sale->data.id);
+			//	_getch();
+				if (sale->data.type == SALE_SELL)
 				{
 					MoneyMax += sale->data.value;
 					MoneySale += sale->data.value;
 					SaleCount += 1;
 				}
-				else if (sale->data.type == -1)
+				else if (sale->data.type == SALE_RETURN)
 				{
 					MoneyMax += sale->data.value;
 					MoneyReturn += sale->data.value;
