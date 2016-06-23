@@ -21,7 +21,7 @@ void SaleData_UI_Money(USER * user,int power)
 			Main_UI_MgtEntry(user);
 		}
 		int MoneyMax = 0, MoneySale = 0, MoneyReturn= 0, SaleCount = 0, ReturnCount = 0,SaleMaxCount = EntKeySale_Perst_CompNewKeys();
-		for (int i = 1; i <= SaleMaxCount; i++)
+		for (int i = 0; i <= SaleMaxCount; i++)
 		{
 			SALE *sale = SaleData_Srv_FetchByID(i);
 		//	printf_s("%s\n",sale->data.UserAcc);
@@ -62,7 +62,7 @@ void SaleData_UI_Money(USER * user,int power)
 	else if (power == 2)
 	{
 		int MoneyMax = 0, MoneySale = 0, MoneyReturn = 0, SaleCount = 0, ReturnCount = 0, SaleMaxCount = EntKeySale_Perst_CompNewKeys();
-		for (int i = 1; i <= SaleMaxCount; i++)
+		for (int i = 0; i <= SaleMaxCount; i++)
 		{
 			SALE *sale = SaleData_Srv_FetchByID(i);
 			if (sale && !strcmp(sale->data.UserAcc, user->USER_ACCOUT))

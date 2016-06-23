@@ -45,18 +45,18 @@ void Play_UI_Add(USER * user)
 	GET_OC(43, 17, 73, 17, 0, 15, "->", 1, 0);
 	switch (GET_CURSOR_X())
 	{
-	case 45:Play_add->data.type = PLAY_TYPE_FLIM;
-	case 60:Play_add->data.type = PLAY_TYPE_OPEAR;
-	case 75:Play_add->data.type = PLAY_TYPE_CONCERT;
+	case 45:Play_add->data.type = PLAY_TYPE_FLIM; break;
+	case 60:Play_add->data.type = PLAY_TYPE_OPEAR; break;
+	case 75:Play_add->data.type = PLAY_TYPE_CONCERT; break;
 	default:
 		break;
 	}
 	GET_OC(43, 19, 73, 19, 0, 15, "->", 1, 0);
 	switch (GET_CURSOR_X())
 	{
-	case 45:Play_add->data.rating = PLAY_RATE_CHILD;
-	case 60:Play_add->data.rating = PLAY_RATE_TEENAGE;
-	case 75:Play_add->data.rating = PLAY_RATE_ADULT;
+	case 45:Play_add->data.rating = PLAY_RATE_CHILD; break;
+	case 60:Play_add->data.rating = PLAY_RATE_TEENAGE; break;
+	case 75:Play_add->data.rating = PLAY_RATE_ADULT; break;
 	default:
 		break;
 	}
