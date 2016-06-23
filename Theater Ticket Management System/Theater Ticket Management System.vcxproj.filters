@@ -867,7 +867,7 @@
       <Filter>源文件\Service</Filter>
     </ClCompile>
     <ClCompile Include="TTMS_SCU_Perst_DelAllTicketBySchedule.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\Persistent</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
