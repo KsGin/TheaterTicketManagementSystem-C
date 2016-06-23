@@ -767,9 +767,6 @@
     <ClCompile Include="TTMS_SCU_Schedule_Perst_Mod.cpp">
       <Filter>源文件\Persistent</Filter>
     </ClCompile>
-    <ClCompile Include="TTMS_SCU_Schedule_Srv_Mod.cpp">
-      <Filter>头文件\Service</Filter>
-    </ClCompile>
     <ClCompile Include="TTMS_SCU_Schedule_UI_Browe.cpp">
       <Filter>源文件\View</Filter>
     </ClCompile>
@@ -863,11 +860,14 @@
     <ClCompile Include="TTMS_SCU_SaleM_UI_Money.cpp">
       <Filter>源文件\View</Filter>
     </ClCompile>
-    <ClCompile Include="TTMS_SCU_Srv_DelAllSeatByStudioUp.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="TTMS_SCU_Perst_DelAllSeatByStudioUp.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\Persistent</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Srv_DelAllSeatByStudioUp.cpp">
+      <Filter>源文件\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="TTMS_SCU_Schedule_Srv_Mod.cpp">
+      <Filter>源文件\Service</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
