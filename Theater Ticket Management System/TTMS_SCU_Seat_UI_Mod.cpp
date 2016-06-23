@@ -27,9 +27,9 @@ void Seat_UI_Mod(USER * user)
 		printf_s("座位状态:");
 		switch (seat->data.status)
 		{     
-		case SEAT_GOOD:printf_s("可用");
-		case SEAT_BROKEN:printf_s("破损");
-		case SEAT_NODE:printf_s("无座位");
+		case SEAT_GOOD:printf_s("可用"); break;
+		case SEAT_BROKEN:printf_s("破损"); break;
+		case SEAT_NODE:printf_s("无座位"); break;
 		default:
 			break;
 		}

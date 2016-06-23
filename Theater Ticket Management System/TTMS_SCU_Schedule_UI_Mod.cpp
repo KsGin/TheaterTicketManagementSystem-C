@@ -52,6 +52,7 @@ void Schedule_UI_Mod(USER * user)
 		schedule->time.daytime.day = NewStartTime_Day;
 		schedule->time.hour = NewStartTime_Hour;
 		schedule->time.minute = NewStartTime_Minute;
+		schedule->data.seat_count = NewSeatCountMax;
 		TTMS_GotoXY(35, 24);
 		printf_s("                                                       ");
 		TTMS_GotoXY(52, 24);

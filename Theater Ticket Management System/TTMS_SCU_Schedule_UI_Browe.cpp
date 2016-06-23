@@ -29,7 +29,7 @@ void Schedule_UI_Browe(USER * user, int arr[],int indexMax)
 	int p = 1;
 	system("cls");
 	int KeyMaX = indexMax;
-	Schedule_UI_LookByPage(p);
+	Schedule_UI_LookByPage(arr,p);
 	char k[15];
 	strcpy_s(k, 15, GET_KEY());
 	while (strcmp(k, "Esc") != 0)

@@ -200,6 +200,7 @@
     <ClInclude Include="TTMS_SCU_Account_UI_Add.h" />
     <ClInclude Include="TTMS_SCU_Account_Srv_Infor.h" />
     <ClInclude Include="TTMS_SCU_Perst_DelAllSeatByStudioUp.h" />
+    <ClInclude Include="TTMS_SCU_Perst_DelAllTicketBySchedule.h" />
     <ClInclude Include="TTMS_SCU_Play_Perst_Del.h" />
     <ClInclude Include="TTMS_SCU_Play_Perst_FetchByID.h" />
     <ClInclude Include="TTMS_SCU_Play_Perst_Insert.h" />
@@ -259,7 +260,6 @@
     <ClInclude Include="TTMS_SCU_Seat_Srv_Mod.h" />
     <ClInclude Include="TTMS_SCU_Seat_Srv_StatusC.h" />
     <ClInclude Include="TTMS_SCU_Seat_UI_Add.h" />
-    <ClInclude Include="TTMS_SCU_Seat_UI_Browe.h" />
     <ClInclude Include="TTMS_SCU_Seat_UI_Del.h" />
     <ClInclude Include="TTMS_SCU_Seat_UI_MgEnt.h" />
     <ClInclude Include="TTMS_SCU_Seat_UI_Mod.h" />
@@ -347,6 +347,7 @@
     <ClCompile Include="TTMS_SCU_Login.cpp" />
     <ClCompile Include="TTMS_SCU_Account_UI_Add.cpp" />
     <ClCompile Include="TTMS_SCU_Perst_DelAllSeatByStudioUp.cpp" />
+    <ClCompile Include="TTMS_SCU_Perst_DelAllTicketBySchedule.cpp" />
     <ClCompile Include="TTMS_SCU_Play_Perst_Del.cpp" />
     <ClCompile Include="TTMS_SCU_Play_Perst_FetchByID.cpp" />
     <ClCompile Include="TTMS_SCU_Play_Perst_Insert.cpp" />
@@ -402,7 +403,6 @@
     <ClCompile Include="TTMS_SCU_Seat_Srv_Mod.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_Srv_StatusC.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_UI_Add.cpp" />
-    <ClCompile Include="TTMS_SCU_Seat_UI_Browe.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_UI_Del.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_UI_MgEnt.cpp" />
     <ClCompile Include="TTMS_SCU_Seat_UI_Mod.cpp" />

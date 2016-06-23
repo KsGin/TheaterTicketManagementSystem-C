@@ -3,6 +3,8 @@
 
 int Schedule_Srv_Mod(SCHEDULE * schedule)
 {
+	TTMS_SCU_Perst_DelTicketByScheduleID(schedule->data.id);
+	Ticket_StatusC(schedule);
 	if (Schedule_Perst_Mod(schedule))
 	{
 		return 1;

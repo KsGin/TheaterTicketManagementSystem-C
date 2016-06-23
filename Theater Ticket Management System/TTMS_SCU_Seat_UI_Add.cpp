@@ -32,9 +32,9 @@ void Seat_UI_Add(USER * user)
 	int i = GET_OC(35, 15, 65, 75, 0, 15, "->", 1, 0);
 	switch (GET_CURSOR_X())
 	{
-	case 37:seat->data.status = SEAT_GOOD;
-	case 52:seat->data.status = SEAT_NODE;
-	case 67:seat->data.status = SEAT_BROKEN;
+	case 37:seat->data.status = SEAT_GOOD; break;
+	case 52:seat->data.status = SEAT_NODE; break;
+	case 67:seat->data.status = SEAT_BROKEN; break;
 	default:
 		break;
 	}
