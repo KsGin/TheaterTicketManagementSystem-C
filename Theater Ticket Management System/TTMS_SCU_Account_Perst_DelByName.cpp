@@ -11,10 +11,10 @@ int Account_Perst_DelByName(char name[])
 	fseek(fp, 0, SEEK_END);
 	int sizefile = ftell(fp);
 	fseek(fp, 0, SEEK_SET);
-	while (!feof(fp) && ftell(fp) < sizefile)
+	while (!feof(fp) && ftell(fp) < sizefile )
 	{
 		fread(temp,  sizeof(USER), 1, fp);
-		if (strcmp(name,temp->USER_ACCOUT) != 0 )
+		if (strcmp(name,temp->USER_NAME) != 0)
 		{
 			fwrite(temp, sizeof(USER), 1 , tempfp);
 		}

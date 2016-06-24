@@ -22,7 +22,7 @@ void SaleData_UI_Analysis(USER * user)
 	printf_s("  ÊÛÆ±Ô±%s            ", Sale_User->USER_NAME);
 	int CountMax = EntKeySale_Perst_CompNewKeys();
 	int SaleData[INDEX_MAX],Count = 0;
-	for (int i = 1; i <= CountMax; i++)
+	for (int i = 0; i <= CountMax; i++)
 	{
 		SALE *sale = SaleData_Srv_FetchByID(i);
 		if (sale && !strcmp(sale->data.UserAcc,Sale_User->USER_ACCOUT))
