@@ -6,6 +6,7 @@
 
 int main()
 {
+	system("Color 0E");
 	if (Account_Perst_CheckAccFile() == 1)
 	{
 		SysLogin();

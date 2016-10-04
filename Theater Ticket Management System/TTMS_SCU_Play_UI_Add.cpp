@@ -1,12 +1,12 @@
 #include "stdafx.h"
 #include "TTMS_SCU_Play_UI_Add.h"
 
-void Play_UI_Add(USER * user)
+void Play_UI_Add(USER* user)
 {
 	system("cls");
 	BIOS_GOTO_BOX(22, 100, 5, 25);
 	BIOS_GOTO_BOX(22, 100, 8, 7);
-	PLAY *Play_add;
+	PLAY* Play_add;
 	Play_add = (PLAY *)malloc(sizeof(PLAY));
 	TTMS_GotoXY(52, 6);
 	printf_s("增加剧目信息");
@@ -45,18 +45,24 @@ void Play_UI_Add(USER * user)
 	GET_OC(43, 17, 73, 17, 0, 15, "->", 1, 0);
 	switch (GET_CURSOR_X())
 	{
-	case 45:Play_add->data.type = PLAY_TYPE_FLIM; break;
-	case 60:Play_add->data.type = PLAY_TYPE_OPEAR; break;
-	case 75:Play_add->data.type = PLAY_TYPE_CONCERT; break;
+	case 45: Play_add->data.type = PLAY_TYPE_FLIM;
+		break;
+	case 60: Play_add->data.type = PLAY_TYPE_OPEAR;
+		break;
+	case 75: Play_add->data.type = PLAY_TYPE_CONCERT;
+		break;
 	default:
 		break;
 	}
 	GET_OC(43, 19, 73, 19, 0, 15, "->", 1, 0);
 	switch (GET_CURSOR_X())
 	{
-	case 45:Play_add->data.rating = PLAY_RATE_CHILD; break;
-	case 60:Play_add->data.rating = PLAY_RATE_TEENAGE; break;
-	case 75:Play_add->data.rating = PLAY_RATE_ADULT; break;
+	case 45: Play_add->data.rating = PLAY_RATE_CHILD;
+		break;
+	case 60: Play_add->data.rating = PLAY_RATE_TEENAGE;
+		break;
+	case 75: Play_add->data.rating = PLAY_RATE_ADULT;
+		break;
 	default:
 		break;
 	}
