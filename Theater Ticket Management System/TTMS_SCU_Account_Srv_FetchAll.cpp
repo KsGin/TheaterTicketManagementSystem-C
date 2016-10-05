@@ -10,7 +10,7 @@ USER* Account_Srv_FetchAll()
 	fopen_s(&USER_READ_FP, "Account.dat", "rb");
 	while (!feof(USER_READ_FP))
 	{
-		NEW_NODE = (USER *)malloc(sizeof(USER));
+		NEW_NODE = static_cast<USER *>(malloc(sizeof(USER)));
 		fread_s(NEW_NODE, sizeof(USER), sizeof(USER), 1, USER_READ_FP);
 		TEMP_NODE->NODE_NEXT = NEW_NODE;
 		NEW_NODE->NODE_PREV = TEMP_NODE;

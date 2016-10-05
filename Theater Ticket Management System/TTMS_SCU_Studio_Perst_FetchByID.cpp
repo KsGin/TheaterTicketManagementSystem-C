@@ -6,7 +6,7 @@ STUDIO * Studio_Perst_FetchByID(int ID)
 	FILE *fp;
 	errno_t err;
 	STUDIO *studio_temp;
-	if (err = fopen_s(&fp,"Studio.dat","rb") != 0)
+	if ((err = fopen_s(&fp,"Studio.dat","rb") != 0))
 	{
 		return nullptr;
 	}
@@ -21,7 +21,7 @@ STUDIO * Studio_Perst_FetchByID(int ID)
 		fseek(fp, 0, SEEK_SET);
 		while (!feof(fp))
 		{
-			studio_temp = (STUDIO *)malloc(sizeof(STUDIO));
+			studio_temp = static_cast<STUDIO *>(malloc(sizeof(STUDIO)));
 			fread_s(studio_temp, sizeof(STUDIO), sizeof(STUDIO), 1, fp);
 			if (studio_temp->data.id == ID)
 			{

@@ -3,7 +3,7 @@
 
 USER* CREAT_LIST_HEAD_USER() {
 	USER *HEAD;
-	HEAD = (USER *)malloc(sizeof(USER));
+	HEAD = static_cast<USER *>(malloc(sizeof(USER)));
 	HEAD->NODE_NEXT = HEAD;
 	HEAD->NODE_PREV = HEAD;
 	strcpy_s(HEAD->USER_NAME, USER_LEN, "");

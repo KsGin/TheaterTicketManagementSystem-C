@@ -14,7 +14,7 @@ int Account_Srv_Verify(char ACCOUNT[], char PASSWORD[])
 	fseek(fp, 0, SEEK_SET);
 	while (feof(fp) == 0)
 	{
-		TEMP = (USER *)malloc(sizeof(USER));
+		TEMP = static_cast<USER *>(malloc(sizeof(USER)));
 		fread(TEMP, sizeof(USER), 1, fp);
 		if (strcmp(ACCOUNT, TEMP->USER_ACCOUT) == 0)
 		{

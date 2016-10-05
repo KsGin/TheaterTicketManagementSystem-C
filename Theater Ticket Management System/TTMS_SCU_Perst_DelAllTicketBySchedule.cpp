@@ -7,7 +7,7 @@ void TTMS_SCU_Perst_DelTicketByScheduleID(int ScheduleID)
 	TICKET  *temp;
 	fopen_s(&fp, "Ticket.dat", "rb");
 	fopen_s(&tempfp, "Tickettemp.dat", "wb");
-	temp = (TICKET *)malloc(sizeof(TICKET));
+	temp = static_cast<TICKET *>(malloc(sizeof(TICKET)));
 	fseek(fp, 0, SEEK_END);
 	int sizefile = ftell(fp);
 	fseek(fp, 0, SEEK_SET);

@@ -10,7 +10,7 @@ void Studio_UI_Mod(USER * user)
 	printf_s("请输入要修改的ID:");
 	int ID;
 	scanf_s("%d", &ID);
-	STUDIO *studio = Studio_Srv_FetchByID(ID);
+	auto *studio = Studio_Srv_FetchByID(ID);
 	if (studio)
 	{
 		int  NewRowCount, NewColsCount;

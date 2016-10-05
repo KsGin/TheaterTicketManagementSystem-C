@@ -22,7 +22,7 @@ void Play_UI_MgtEntry(USER * user)
 	TTMS_GotoXY(47, 17);
 	printf_s("No5:ä¯ÀÀ¾çÄ¿ÐÅÏ¢");
 	TTMS_GotoXY(47, 19);
-	int flag = GET_OC(44, 9, 44, 17, 2, 1, "->", 0, 1);
+	auto flag = GET_OC(44, 9, 44, 17, 2, 1, "->", 0, 1);
 	if (flag == 1)
 	{
 		switch (GET_CURSOR_Y())

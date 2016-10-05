@@ -5,7 +5,7 @@ int Play_Perst_DeleteByID(int ID)
 {
 	FILE *fp, *tempfp;
 	PLAY *play, *temp;
-	int flag = 0;
+	auto flag = 0;
 	play = Play_Srv_FetchByID(ID);
 	if (play == nullptr)
 	{
@@ -13,7 +13,7 @@ int Play_Perst_DeleteByID(int ID)
 	}
 	fopen_s(&fp, "Play.dat", "rb");
 	fopen_s(&tempfp, "Playtemp.dat", "wb");
-	temp = (PLAY *)malloc(sizeof(PLAY));
+	temp = static_cast<PLAY *>(malloc(sizeof(PLAY)));
 	fseek(fp, 0, SEEK_END);
 	int sizefile = ftell(fp);
 	fseek(fp, 0, SEEK_SET);

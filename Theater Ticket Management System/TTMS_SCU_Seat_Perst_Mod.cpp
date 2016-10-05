@@ -7,13 +7,13 @@ int Seat_Perst_Mod(SEAT * seat, int status)
 	SEAT *temp;
 	fopen_s(&fp, "Seat.dat", "rb");
 	fopen_s(&tempfp, "Seattemp.dat", "wb");
-	temp = (SEAT *)malloc(sizeof(SEAT));
+	temp = static_cast<SEAT *>(malloc(sizeof(SEAT)));
 	while (!feof(fp))
 	{
 		fread_s(temp, sizeof(SEAT), sizeof(SEAT), 1, fp);
 		if (seat->data.id == temp->data.id)
 		{
-			temp->data.status = (SEAT_STATUS)status;
+			temp->data.status = static_cast<SEAT_STATUS>(status);
 		}
 		fwrite(temp, sizeof(SEAT), 1, tempfp);
 	}

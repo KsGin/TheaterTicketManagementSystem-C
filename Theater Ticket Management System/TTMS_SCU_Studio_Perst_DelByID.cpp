@@ -5,7 +5,7 @@ int Studio_Perst_DeleteByID(int ID)
 {
 	FILE *fp, *tempfp;
 	STUDIO *studio,*temp;
-	int flag = 0;
+	auto flag = 0;
 	studio = Studio_Perst_FetchByID(ID);
 	if (studio == nullptr)
 	{
@@ -13,7 +13,7 @@ int Studio_Perst_DeleteByID(int ID)
 	}
 	fopen_s(&fp, "Studio.dat", "rb");
 	fopen_s(&tempfp, "Studiotemp.dat", "wb");
-	temp = (STUDIO *)malloc(sizeof(STUDIO));
+	temp = static_cast<STUDIO *>(malloc(sizeof(STUDIO)));
 	fseek(fp, 0, SEEK_END);
 	int sizefile = ftell(fp);
 	fseek(fp, 0, SEEK_SET);

@@ -9,7 +9,7 @@ void Schedule_UI_Add(USER * user)
 	PLAY *play;
 	STUDIO *studio;
 	SCHEDULE *schedule;
-	schedule = (SCHEDULE *)malloc(sizeof(SCHEDULE));
+	schedule = static_cast<SCHEDULE *>(malloc(sizeof(SCHEDULE)));
 	TTMS_GotoXY(52, 6);
 	printf_s("上架演出信息");
 	TTMS_GotoXY(47, 9);
@@ -32,13 +32,13 @@ void Schedule_UI_Add(USER * user)
 	scanf_s("%d%d%d", &schedule->time.daytime.year, &schedule->time.daytime.month, &schedule->time.daytime.day);
 	TTMS_GotoXY(61, 17);
 	scanf_s("%d%d", &schedule->time.hour, &schedule->time.minute);
-	if (!(studio = Studio_Srv_FetchByID(schedule->data.studio_id))) {
+	if (!((studio = Studio_Srv_FetchByID(schedule->data.studio_id)))) {
 		TTMS_GotoXY(48, 20);
 		printf_s("无此演出厅，任意键返回");
 		_getch();
 		Schedule_UI_MgtEntry(user);
 	}
-	else if (!(play = Play_Srv_FetchByID(schedule->data.play_id)))
+	else if (!((play = Play_Srv_FetchByID(schedule->data.play_id))))
 	{
 		TTMS_GotoXY(48, 20);
 		printf_s("无此剧目信息，任意键返回");

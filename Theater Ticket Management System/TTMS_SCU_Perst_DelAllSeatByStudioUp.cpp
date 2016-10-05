@@ -7,7 +7,7 @@ int Seat_Perst_DelByStudioID(int StudioID)
 	SEAT  *temp;
 	fopen_s(&fp, "Seat.dat", "rb");
 	fopen_s(&tempfp, "Seattemp.dat", "wb");
-	temp = (SEAT *)malloc(sizeof(SEAT));
+	temp = static_cast<SEAT *>(malloc(sizeof(SEAT)));
 	fseek(fp, 0, SEEK_END);
 	int sizefile = ftell(fp);
 	fseek(fp, 0, SEEK_SET);

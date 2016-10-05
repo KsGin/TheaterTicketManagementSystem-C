@@ -22,7 +22,7 @@ void Account_UI_MgtEntry(USER *user)
 		TTMS_GotoXY(47, 17);
 		printf_s("NO5:浏览系统用户");
 		TTMS_GotoXY(47,19);
-		int flag = GET_OC(44, 9, 44, 17, 2, 1, "->", 0, 1);
+	auto flag = GET_OC(44, 9, 44, 17, 2, 1, "->", 0, 1);
 		if (flag == 1)
 		{
 			switch (GET_CURSOR_Y())
@@ -32,6 +32,7 @@ void Account_UI_MgtEntry(USER *user)
 			case 13:Account_UI_ModPassword(user); break;
 			case 15:Account_UI_Que(user); break;
 			case 17:Account_UI_Browe(user); break;
+			default: break;
 			}
 		}
 		else if (flag == 0)

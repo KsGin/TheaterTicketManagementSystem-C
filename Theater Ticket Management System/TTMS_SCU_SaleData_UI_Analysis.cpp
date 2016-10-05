@@ -10,7 +10,7 @@ void SaleData_UI_Analysis(USER * user)
 	printf_s("请输入售票员姓名:");
 	char UserName[15];
 	scanf_s("%s", UserName,15);
-	USER *Sale_User = Account_Perst_FetchByName(UserName);
+	auto *Sale_User = Account_Perst_FetchByName(UserName);
 	if (!Sale_User || Sale_User->power != 2)
 	{
 		TTMS_GotoXY(55, 15);
@@ -20,11 +20,11 @@ void SaleData_UI_Analysis(USER * user)
 	}
 	TTMS_GotoXY(52, 6);
 	printf_s("  售票员%s            ", Sale_User->USER_NAME);
-	int CountMax = EntKeySale_Perst_CompNewKeys();
+	auto CountMax = EntKeySale_Perst_CompNewKeys();
 	int SaleData[INDEX_MAX],Count = 0;
-	for (int i = 0; i <= CountMax; i++)
+	for (auto i = 0; i <= CountMax; i++)
 	{
-		SALE *sale = SaleData_Srv_FetchByID(i);
+		auto *sale = SaleData_Srv_FetchByID(i);
 		if (sale && !strcmp(sale->data.UserAcc,Sale_User->USER_ACCOUT))
 		{
 			SaleData[Count] = sale->data.id;

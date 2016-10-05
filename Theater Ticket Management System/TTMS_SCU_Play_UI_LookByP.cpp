@@ -26,9 +26,9 @@ void Play_UI_LookByPage(int Page)
 	printf_s("全场时间");
 	TTMS_GotoXY(37, 24);
 	printf_s("Left上一页  Right下一页  Esc返回上一层              PAGE:%d", Page);
-	for (int i = ((Page - 1) * 5) + 1; i <= (Page) * 5; i++)
+	for (auto i = ((Page - 1) * 5) + 1; i <= (Page) * 5; i++)
 	{
-		PLAY *play = Play_Perst_FetchByID(i);
+		auto *play = Play_Perst_FetchByID(i);
 		if (!play)
 		{
 			break;

@@ -6,7 +6,7 @@ int Ticket_Perst_FetchBySS(int ScheduleID, int SeatID)
 	FILE *fp;
 	errno_t err;
 	TICKET *ticket_temp;
-	if (err = fopen_s(&fp, "Ticket.dat", "rb") != 0)
+	if ((err = fopen_s(&fp, "Ticket.dat", "rb") != 0))
 	{
 		return 0;
 	}
@@ -21,7 +21,7 @@ int Ticket_Perst_FetchBySS(int ScheduleID, int SeatID)
 		fseek(fp, 0, SEEK_SET);
 		while (!feof(fp))
 		{
-			ticket_temp = (TICKET *)malloc(sizeof(TICKET));
+			ticket_temp = static_cast<TICKET *>(malloc(sizeof(TICKET)));
 			fread_s(ticket_temp, sizeof(TICKET), sizeof(TICKET), 1, fp);
 			if (ticket_temp->data.schedule_id == ScheduleID && ticket_temp->data.seat_id == SeatID)
 			{

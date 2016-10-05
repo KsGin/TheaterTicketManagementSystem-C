@@ -8,7 +8,7 @@ void Sale_Srv_SaleI(TICKET * ticket, USER * user)
 	ticket->data.status = TICKET_AVL;
 	Ticket_Perst_ModStatus(ticket);
 	SALE *sale;
-	sale = (SALE*)malloc(sizeof(SALE));
+	sale = static_cast<SALE*>(malloc(sizeof(SALE)));
 	sale->data.id = EntKeySale_Perst_CompNewKeys();
 	sale->data.ticket_id = ticket->data.id;
 	sale->data.type = SALE_RETURN;

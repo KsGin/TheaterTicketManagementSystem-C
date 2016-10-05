@@ -6,7 +6,7 @@ TICKET * Ticket_Perst_FetchByID(int ID)
 	FILE *fp;
 	errno_t err;
 	TICKET *ticket_temp;
-	if (err = fopen_s(&fp, "Ticket.dat", "rb") != 0)
+	if ((err = fopen_s(&fp, "Ticket.dat", "rb") != 0))
 	{
 		return nullptr;
 	}
@@ -21,7 +21,7 @@ TICKET * Ticket_Perst_FetchByID(int ID)
 		fseek(fp, 0, SEEK_SET);
 		while (!feof(fp))
 		{
-			ticket_temp = (TICKET *)malloc(sizeof(TICKET));
+			ticket_temp = static_cast<TICKET *>(malloc(sizeof(TICKET)));
 			fread_s(ticket_temp, sizeof(TICKET), sizeof(TICKET), 1, fp);
 			if (ticket_temp->data.id == ID)
 			{

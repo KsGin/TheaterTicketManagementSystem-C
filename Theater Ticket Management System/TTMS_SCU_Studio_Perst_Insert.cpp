@@ -5,7 +5,7 @@ void Studio_Perst_Insert(STUDIO * studio)
 {
 	FILE *fp;
 	errno_t err;
-	if (err = fopen_s(&fp, "Studio.dat", "ab+") != 0)
+	if ((err = fopen_s(&fp, "Studio.dat", "ab+") != 0))
 	{
 		TTMS_GotoXY(55, 3);
 		printf_s("File Code:%d error!", err);

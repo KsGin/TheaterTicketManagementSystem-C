@@ -6,7 +6,7 @@ int SaleData_Perst_FentchByUser(char UserAccount[])
 	FILE *fp;
 	errno_t err;
 	SALE *SaleData_temp;
-	int Count = 0;
+	auto Count = 0;
 	if (err = fopen_s(&fp, "Sale.dat", "rb") != 0)
 	{
 		return 0;
@@ -22,7 +22,7 @@ int SaleData_Perst_FentchByUser(char UserAccount[])
 		fseek(fp, 0, SEEK_SET);
 		while (!feof(fp))
 		{
-			SaleData_temp = (SALE *)malloc(sizeof(SALE));
+			SaleData_temp = static_cast<SALE *>(malloc(sizeof(SALE)));
 			fread_s(SaleData_temp, sizeof(SALE), sizeof(SALE), 1, fp);
 			if (strcmp(SaleData_temp->data.UserAcc,UserAccount) == 0)
 			{

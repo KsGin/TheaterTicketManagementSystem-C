@@ -3,9 +3,9 @@
 void Account_UI_Add(USER *Admini)
 {
 	USER *user;
-	user = (USER*)malloc(sizeof(USER));
+	user = static_cast<USER*>(malloc(sizeof(USER)));
 	system("cls");
-	int power = 1;
+	auto power = 1;
 	BIOS_GOTO_BOX(22,100,5,25);
 	BIOS_GOTO_BOX(22, 100, 8, 7);
 	TTMS_GotoXY(55, 6);

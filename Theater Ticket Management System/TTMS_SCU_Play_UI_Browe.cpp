@@ -3,9 +3,9 @@
 
 void Play_UI_Browe(USER* user)
 {
-	int p = 1;
+	auto p = 1;
 	system("cls");
-	int KeyMaX = EntKeyPlay_Perst_CompNewKeys() - 1;
+	auto KeyMaX = EntKeyPlay_Perst_CompNewKeys() - 1;
 	Play_UI_LookByPage(p);
 	char k[15];
 	strcpy_s(k, 15, GET_KEY());

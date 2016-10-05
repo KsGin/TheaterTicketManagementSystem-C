@@ -28,9 +28,9 @@ void Schedule_UI_LookByPage(int Page)
 	printf_s("开始时间");
 	TTMS_GotoXY(37, 24);
 	printf_s("Left上一页  Right下一页  Esc返回上一层              PAGE:%d", Page);
-	for (int i = ((Page - 1) * 5) + 1; i <= (Page) * 5; i++)
+	for (auto i = ((Page - 1) * 5) + 1; i <= (Page) * 5; i++)
 	{
-		SCHEDULE *schedule = Schedule_Perst_FetchByID(i);
+		auto *schedule = Schedule_Perst_FetchByID(i);
 		if (!schedule)
 		{
 			break;
@@ -76,9 +76,9 @@ void Schedule_UI_LookByPage(int Arr[],int Page)
 	printf_s("开始时间");
 	TTMS_GotoXY(37, 24);
 	printf_s("Left上一页  Right下一页  Esc返回上一层              PAGE:%d", Page);
-	for (int i = ((Page - 1) * 5) + 1; i <= (Page) * 5; i++)
+	for (auto i = ((Page - 1) * 5) + 1; i <= (Page) * 5; i++)
 	{
-		SCHEDULE *schedule = Schedule_Perst_FetchByID(Arr[i-1]);
+		auto *schedule = Schedule_Perst_FetchByID(Arr[i-1]);
 		if (!schedule)
 		{
 			break;
@@ -124,22 +124,22 @@ void Schedule_UI_LookByPage( int Page, int i)
 	printf_s("开始时间");
 	TTMS_GotoXY(30, 24);
 	printf_s("Left上一页  Right下一页  Esc返回上一层  （Esc结束浏览） PAGE:%d", Page);
-	for (int i = ((Page - 1) * 5) + 1; i <= (Page) * 5; i++)
+	for (auto index = ((Page - 1) * 5) + 1; index <= (Page) * 5; index++)
 	{
-		SCHEDULE *schedule = Schedule_Perst_FetchByID(i);
+		auto *schedule = Schedule_Perst_FetchByID(index);
 		if (!schedule)
 		{
 			break;
 		}
-		TTMS_GotoXY(24, 9 + (i - 5 * (Page - 1) - 1) * 3);
+		TTMS_GotoXY(24, 9 + (index - 5 * (Page - 1) - 1) * 3);
 		printf_s("%d", schedule->data.id);
-		TTMS_GotoXY(37, 9 + (i - 5 * (Page - 1) - 1) * 3);
+		TTMS_GotoXY(37, 9 + (index - 5 * (Page - 1) - 1) * 3);
 		printf_s("%d", schedule->data.studio_id);
-		TTMS_GotoXY(52, 9 + (i - 5 * (Page - 1) - 1) * 3);
+		TTMS_GotoXY(52, 9 + (index - 5 * (Page - 1) - 1) * 3);
 		printf_s("%d", schedule->data.play_id);
-		TTMS_GotoXY(64, 9 + (i - 5 * (Page - 1) - 1) * 3);
+		TTMS_GotoXY(64, 9 + (index - 5 * (Page - 1) - 1) * 3);
 		printf_s("%d", schedule->data.seat_count);
-		TTMS_GotoXY(75, 9 + (i - 5 * (Page - 1) - 1) * 3);
+		TTMS_GotoXY(75, 9 + (index - 5 * (Page - 1) - 1) * 3);
 		printf_s("%d年%d月%d日%d时%d分", schedule->time.daytime.year, schedule->time.daytime.month, schedule->time.daytime.day, schedule->time.hour, schedule->time.minute);
 
 	}

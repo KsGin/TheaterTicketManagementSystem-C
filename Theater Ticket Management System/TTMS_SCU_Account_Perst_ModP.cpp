@@ -7,7 +7,7 @@ int Account_Perst_ModPassword(USER *Mod_user, char NewPassword[])
 	USER *temp;
 	fopen_s(&fp, "Account.dat", "rb");
 	fopen_s(&tempfp, "Accounttemp.dat", "wb");
-	temp = (USER *)malloc(sizeof(USER));
+	temp = static_cast<USER *>(malloc(sizeof(USER)));
 	fseek(fp, 0, SEEK_END);
 	int sizefile = ftell(fp);
 	fseek(fp, 0, SEEK_SET);

@@ -3,6 +3,6 @@
 
 int EntKey_Srv_CompNewKey()
 {
-	int key = EntKey_Perst_CompNewKeys();
+	auto key = EntKey_Perst_CompNewKeys();
 	return key + 1;
 }

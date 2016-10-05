@@ -10,7 +10,7 @@ void Schedule_UI_Mod(USER * user)
 	printf_s("请输入要修改的ID:");
 	int ID;
 	scanf_s("%d", &ID);
-	SCHEDULE *schedule = Schedule_Srv_FetchByID(ID);
+	auto *schedule = Schedule_Srv_FetchByID(ID);
 	if (schedule)
 	{
 		BIOS_GOTO_BOX(22, 100, 23, 22);

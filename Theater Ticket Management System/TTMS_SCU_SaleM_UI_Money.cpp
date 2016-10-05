@@ -12,7 +12,7 @@ void SaleData_UI_Money(USER * user,int power)
 		char UserName[15];
 		printf_s("请输入售货员姓名:");
 		scanf_s("%s", UserName, 15);
-		USER *Sale_User = Account_Perst_FetchByName(UserName);
+		auto *Sale_User = Account_Perst_FetchByName(UserName);
 		if (!Sale_User || Sale_User->power != 2)
 		{
 			TTMS_GotoXY(55, 19);
@@ -20,10 +20,10 @@ void SaleData_UI_Money(USER * user,int power)
 			_getch();
 			Main_UI_MgtEntry(user);
 		}
-		int MoneyMax = 0, MoneySale = 0, MoneyReturn= 0, SaleCount = 0, ReturnCount = 0,SaleMaxCount = EntKeySale_Perst_CompNewKeys();
-		for (int i = 0; i <= SaleMaxCount; i++)
+		auto MoneyMax = 0, MoneySale = 0, MoneyReturn= 0, SaleCount = 0, ReturnCount = 0,SaleMaxCount = EntKeySale_Perst_CompNewKeys();
+		for (auto i = 0; i <= SaleMaxCount; i++)
 		{
-			SALE *sale = SaleData_Srv_FetchByID(i);
+			auto *sale = SaleData_Srv_FetchByID(i);
 		//	printf_s("%s\n",sale->data.UserAcc);
 		//	_getch();
 			if (sale && !strcmp(sale->data.UserAcc, Sale_User->USER_ACCOUT))
@@ -61,10 +61,10 @@ void SaleData_UI_Money(USER * user,int power)
 	}
 	else if (power == 2)
 	{
-		int MoneyMax = 0, MoneySale = 0, MoneyReturn = 0, SaleCount = 0, ReturnCount = 0, SaleMaxCount = EntKeySale_Perst_CompNewKeys();
-		for (int i = 0; i <= SaleMaxCount; i++)
+		auto MoneyMax = 0, MoneySale = 0, MoneyReturn = 0, SaleCount = 0, ReturnCount = 0, SaleMaxCount = EntKeySale_Perst_CompNewKeys();
+		for (auto i = 0; i <= SaleMaxCount; i++)
 		{
-			SALE *sale = SaleData_Srv_FetchByID(i);
+			auto *sale = SaleData_Srv_FetchByID(i);
 			if (sale && !strcmp(sale->data.UserAcc, user->USER_ACCOUT))
 			{
 			//	printf_s("%d", sale->data.id);

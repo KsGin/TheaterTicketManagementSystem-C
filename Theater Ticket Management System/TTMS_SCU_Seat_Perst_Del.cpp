@@ -5,7 +5,7 @@ int Seat_Perst_DeleteByID(int ID)
 {
 	FILE *fp, *tempfp;
 	SEAT *seat, *temp;
-	int flag = 0;
+	auto flag = 0;
 	seat = Seat_Perst_FetchByID(ID);
 	if (seat == nullptr)
 	{
@@ -13,7 +13,7 @@ int Seat_Perst_DeleteByID(int ID)
 	}
 	fopen_s(&fp, "Seat.dat", "rb");
 	fopen_s(&tempfp, "Seattemp.dat", "wb");
-	temp = (SEAT *)malloc(sizeof(SEAT));
+	temp = static_cast<SEAT *>(malloc(sizeof(SEAT)));
 	fseek(fp, 0, SEEK_END);
 	int sizefile = ftell(fp);
 	fseek(fp, 0, SEEK_SET);

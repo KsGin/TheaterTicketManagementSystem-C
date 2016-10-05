@@ -5,7 +5,7 @@ int Schedule_Perst_DeleteByID(int ID)
 {
 	FILE *fp, *tempfp;
 	SCHEDULE *schedule, *temp;
-	int flag = 0;
+	auto flag = 0;
 	schedule = Schedule_Srv_FetchByID(ID);
 	if (schedule == nullptr)
 	{
@@ -13,7 +13,7 @@ int Schedule_Perst_DeleteByID(int ID)
 	}
 	fopen_s(&fp, "Schedule.dat", "rb");
 	fopen_s(&tempfp, "Scheduletemp.dat", "wb");
-	temp = (SCHEDULE *)malloc(sizeof(SCHEDULE));
+	temp = static_cast<SCHEDULE *>(malloc(sizeof(SCHEDULE)));
 	fseek(fp, 0, SEEK_END);
 	int sizefile = ftell(fp);
 	fseek(fp, 0, SEEK_SET);

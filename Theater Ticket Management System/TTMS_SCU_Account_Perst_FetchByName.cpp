@@ -14,7 +14,7 @@ USER * Account_Perst_FetchByName(char username[])
 	fseek(fp, 0, SEEK_SET);
 	while (feof(fp) == 0)
 	{
-		TEMP = (USER *)malloc(sizeof(USER));
+		TEMP = static_cast<USER *>(malloc(sizeof(USER)));
 		fread(TEMP, sizeof(USER), 1, fp);
 		if (strcmp(username, TEMP->USER_NAME) == 0)
 		{

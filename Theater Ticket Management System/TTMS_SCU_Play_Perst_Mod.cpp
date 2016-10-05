@@ -7,7 +7,7 @@ int Play_Perst_Mod(PLAY * play)
 	PLAY *temp;
 	fopen_s(&fp, "Play.dat", "rb");
 	fopen_s(&tempfp, "Playtemp.dat", "wb");
-	temp = (PLAY *)malloc(sizeof(PLAY));
+	temp = static_cast<PLAY *>(malloc(sizeof(PLAY)));
 	while (!feof(fp))
 	{
 		fread_s(temp, sizeof(PLAY), sizeof(PLAY), 1, fp);

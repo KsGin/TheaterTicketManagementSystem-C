@@ -3,10 +3,10 @@
 
 void SaleData_UI_Browe(USER * user, int arr[], int indexMax)
 {
-	int p = 1;
+	auto p = 1;
 	system("cls");
 	SaleData_UI_LookByPage(arr, p);
-	int KeyMaX = indexMax;
+	auto KeyMaX = indexMax;
 	char k[15];
 	strcpy_s(k, 15, GET_KEY());
 	while (strcmp(k, "Esc") != 0)

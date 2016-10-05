@@ -20,7 +20,7 @@ void Schedule_UI_MgtEntry(USER * user)
 	TTMS_GotoXY(47, 15);
 	printf_s("NO4:查看演出计划");
 	TTMS_GotoXY(47, 19);
-	int flag = GET_OC(44, 9, 44, 15, 2, 1, "->", 0, 1);
+	auto flag = GET_OC(44, 9, 44, 15, 2, 1, "->", 0, 1);
 	if (flag == 1)
 	{
 		switch (GET_CURSOR_Y())

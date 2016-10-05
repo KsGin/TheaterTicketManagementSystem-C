@@ -4,7 +4,7 @@
 int EntKeyPlay_Perst_CompKeyM()
 {
 	FILE *fp;
-	int key = EntKeyPlay_Perst_CompNewKeys();
+	auto key = EntKeyPlay_Perst_CompNewKeys();
 	fopen_s(&fp, "EntityKeyPlay.dat", "w");
 	fprintf_s(fp, "%d", key - 1);
 	fclose(fp);

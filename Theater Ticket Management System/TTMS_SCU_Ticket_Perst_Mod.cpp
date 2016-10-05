@@ -7,7 +7,7 @@ int Ticket_Perst_ModStatus(TICKET *ticket)
 	TICKET *temp;
 	fopen_s(&fp, "Ticket.dat", "rb");
 	fopen_s(&tempfp, "Tickettemp.dat", "wb");
-	temp = (TICKET*)malloc(sizeof(TICKET));
+	temp = static_cast<TICKET*>(malloc(sizeof(TICKET)));
 	while (!feof(fp))
 	{
 		fread_s(temp, sizeof(TICKET), sizeof(TICKET), 1, fp);

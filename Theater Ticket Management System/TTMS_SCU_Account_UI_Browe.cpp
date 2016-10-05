@@ -3,14 +3,14 @@
 
 void Account_UI_Browe(USER *Admini)
 {
-	int NUMBER = 0;
+	auto NUMBER = 0;
 	USER *HEAD;
 	HEAD = Account_Srv_FetchAll();
 	while (Account_UI_BoByPage(NUMBER*5, (NUMBER+1)*5, HEAD) == 0)
 	{
 		NUMBER++;
 	}
-	int max = NUMBER;
+	auto max = NUMBER;
 	NUMBER = 0;
 	char key[10];
 	Account_UI_BoByPage(NUMBER * 5, (NUMBER + 1) * 5, HEAD);

@@ -3,7 +3,7 @@
 
 int Account_Perst_Update(USER * Head)
 {
-	USER *User = Head;
+	auto User = Head;
 	FILE *fp;
 	fopen_s(&fp, "Account.dat", "wb+");
 	fseek(fp, 0, SEEK_SET);

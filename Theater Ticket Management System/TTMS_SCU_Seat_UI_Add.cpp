@@ -8,7 +8,7 @@ void Seat_UI_Add(USER * user)
 	BIOS_GOTO_BOX(22, 100, 8, 7);
 	SEAT *seat;
 	STUDIO *studio;
-	seat = (SEAT *)malloc(sizeof(SEAT));
+	seat = static_cast<SEAT *>(malloc(sizeof(SEAT)));
 	TTMS_GotoXY(52, 6);
 	printf_s("Ôö¼Ó×ùÎ»");
 	TTMS_GotoXY(47, 9);
@@ -29,7 +29,7 @@ void Seat_UI_Add(USER * user)
 	scanf_s("%d", &seat->data.row);
 	TTMS_GotoXY(61, 13);
 	scanf_s("%d", &seat->data.col);
-	int i = GET_OC(35, 15, 65, 75, 0, 15, "->", 1, 0);
+	auto i = GET_OC(35, 15, 65, 75, 0, 15, "->", 1, 0);
 	switch (GET_CURSOR_X())
 	{
 	case 37:seat->data.status = SEAT_GOOD; break;

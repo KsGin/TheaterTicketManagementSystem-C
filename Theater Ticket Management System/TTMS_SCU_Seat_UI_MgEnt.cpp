@@ -18,7 +18,7 @@ void Seat_UI_MgtEntry(USER * user)
 	TTMS_GotoXY(47, 13);
 	printf_s("NO3:É¾³ý×ùÎ»");
 	TTMS_GotoXY(47, 19);
-	int flag = GET_OC(44, 9, 44, 13, 2, 1, "->", 0, 1);
+	auto flag = GET_OC(44, 9, 44, 13, 2, 1, "->", 0, 1);
 	if (flag == 1)
 	{
 		switch (GET_CURSOR_Y())
@@ -26,6 +26,7 @@ void Seat_UI_MgtEntry(USER * user)
 		case 9: Seat_UI_Add(user); break;
 		case 11: Seat_UI_Mod(user); break;
 		case 13: Seat_UI_Delete(user); break;
+		default: break;
 		}
 	}
 	else if (flag == 0)

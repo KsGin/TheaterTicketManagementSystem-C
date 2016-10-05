@@ -9,21 +9,21 @@ int Ticket_UI_ShowTicketByT(TICKET * ticket)
 	BIOS_GOTO_BOX(22, 100, 5, 25);
 	BIOS_GOTO_BOX(22, 100, 8, 7);
 	TTMS_GotoXY(52, 6);
-	SCHEDULE *schedule = Schedule_Srv_FetchByID(ticket->data.schedule_id);
+	auto *schedule = Schedule_Srv_FetchByID(ticket->data.schedule_id);
 	if (!schedule)
 	{
 		TTMS_GotoXY(50, 24);
 		printf_s("无此演出计划的信息");
 	}
 	else {
-		for (int i = 11; i < 21; i++)
+		for (auto i = 11; i < 21; i++)
 		{
 			TTMS_GotoXY(30, i);
 			printf_s("*");
 			TTMS_GotoXY(92, i);
 			printf_s("*");
 		}
-		for (int i = 30; i < 92; i++)
+		for (auto i = 30; i < 92; i++)
 		{
 			TTMS_GotoXY(i, 11);
 			printf_s("*");
@@ -35,7 +35,7 @@ int Ticket_UI_ShowTicketByT(TICKET * ticket)
 		TTMS_GotoXY(45, 13);
 		printf_s("没人来剧院");
 		TTMS_GotoXY(33, 15);
-		PLAY *play = Play_Srv_FetchByID(schedule->data.play_id);
+		auto *play = Play_Srv_FetchByID(schedule->data.play_id);
 		switch (play->data.type)
 		{
 		case PLAY_TYPE_FLIM:printf_s("电影"); break;
@@ -58,7 +58,7 @@ int Ticket_UI_ShowTicketByT(TICKET * ticket)
 		printf_s("观众#");
 		TTMS_GotoXY(33, 17);
 		printf_s("播放地址:");
-		STUDIO *studio = Studio_Srv_FetchByID(schedule->data.studio_id);
+		auto *studio = Studio_Srv_FetchByID(schedule->data.studio_id);
 		printf_s("%s演出厅", studio->data.name);
 		TTMS_GotoXY(70, 17);
 		printf_s("全片时长:%d分钟", play->data.duration);
@@ -66,7 +66,7 @@ int Ticket_UI_ShowTicketByT(TICKET * ticket)
 		printf_s("开始时间 %d年%d月%d日%d时%d分", schedule->time.daytime.year, schedule->time.daytime.month, schedule->time.daytime.day, schedule->time.hour, schedule->time.minute);
 		TTMS_GotoXY(73, 19);
 		printf_s("票价:￥%d", play->data.price);
-		SEAT *seat = Seat_Srv_FetchByID(ticket->data.seat_id);
+		auto *seat = Seat_Srv_FetchByID(ticket->data.seat_id);
 		TTMS_GotoXY(71, 13);
 		printf_s("##%d排%d列##", seat->data.row, seat->data.col);
 	}

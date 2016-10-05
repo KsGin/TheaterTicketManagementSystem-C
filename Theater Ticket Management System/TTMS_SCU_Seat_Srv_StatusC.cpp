@@ -3,12 +3,12 @@
 
 void Seat_Srv_StatusC(STUDIO *studio)
 {
-	for (int i = 1; i <= studio->data.rowsCount; i++)
+	for (auto i = 1; i <= studio->data.rowsCount; i++)
 	{
-		for (int j = 1; j <= studio->data.colsCount; j++)
+		for (auto j = 1; j <= studio->data.colsCount; j++)
 		{
 			SEAT *seat;
-			seat = (SEAT*)malloc(sizeof(SEAT));
+			seat = static_cast<SEAT*>(malloc(sizeof(SEAT)));
 			seat->data.row = i;
 			seat->data.col = j;
 			seat->data.RoomID = studio->data.id;

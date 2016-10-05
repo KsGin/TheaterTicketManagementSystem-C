@@ -3,9 +3,9 @@
 
 void Schedule_UI_Browe(USER * user)
 {
-	int p = 1;
+	auto p = 1;
 	system("cls");
-	int KeyMaX = EntKeySchedule_Perst_CompNewKeys() - 1;
+	auto KeyMaX = EntKeySchedule_Perst_CompNewKeys() - 1;
 	Schedule_UI_LookByPage(p);
 	char k[15];
 	strcpy_s(k, 15, GET_KEY());
@@ -26,9 +26,9 @@ void Schedule_UI_Browe(USER * user)
 
 void Schedule_UI_Browe(USER * user, int arr[],int indexMax)
 {
-	int p = 1;
+	auto p = 1;
 	system("cls");
-	int KeyMaX = indexMax;
+	auto KeyMaX = indexMax;
 	Schedule_UI_LookByPage(arr,p);
 	char k[15];
 	strcpy_s(k, 15, GET_KEY());
@@ -49,9 +49,9 @@ void Schedule_UI_Browe(USER * user, int arr[],int indexMax)
 
 void Schedule_UI_Browe(USER * user, int i)
 {
-	int p = 1;
+	auto p = 1;
 	system("cls");
-	int KeyMaX = EntKeySchedule_Perst_CompNewKeys() - 1;
+	auto KeyMaX = EntKeySchedule_Perst_CompNewKeys() - 1;
 	Schedule_UI_LookByPage(p,i);
 	char k[15];
 	strcpy_s(k, 15, GET_KEY());

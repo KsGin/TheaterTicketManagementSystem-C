@@ -6,7 +6,7 @@ PLAY * Play_Perst_FetchByID(int ID)
 	FILE *fp;
 	errno_t err;
 	PLAY *play_temp;
-	if (err = fopen_s(&fp, "Play.dat", "rb") != 0)
+	if ((err = fopen_s(&fp, "Play.dat", "rb") != 0))
 	{
 		return nullptr;
 	}
@@ -21,7 +21,7 @@ PLAY * Play_Perst_FetchByID(int ID)
 		fseek(fp, 0, SEEK_SET);
 		while (!feof(fp))
 		{
-			play_temp = (PLAY *)malloc(sizeof(PLAY));
+			play_temp = static_cast<PLAY *>(malloc(sizeof(PLAY)));
 			fread_s(play_temp, sizeof(PLAY), sizeof(PLAY), 1, fp);
 			if (play_temp->data.id == ID)
 			{

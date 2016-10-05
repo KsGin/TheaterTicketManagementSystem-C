@@ -7,7 +7,7 @@ void Studio_Perst_Mod(STUDIO * studio)
 	STUDIO *temp;
 	fopen_s(&fp, "Studio.dat", "rb");
 	fopen_s(&tempfp, "Studiotemp.dat", "wb");
-	temp = (STUDIO *)malloc(sizeof(STUDIO));
+	temp = static_cast<STUDIO *>(malloc(sizeof(STUDIO)));
 	while (!feof(fp))
 	{
 		fread_s(temp, sizeof(STUDIO), sizeof(STUDIO), 1, fp);

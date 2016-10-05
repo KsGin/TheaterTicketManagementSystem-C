@@ -9,12 +9,12 @@ void Sale_UI_ShowSchedule(USER * user)
 	BIOS_GOTO_BOX(22, 100, 8, 7);
 	TTMS_GotoXY(52, 6);
 	printf_s("请输入查询的剧目ID:");
-	int KeyMax = EntKeySchedule_Perst_CompNewKeys();
+	auto KeyMax = EntKeySchedule_Perst_CompNewKeys();
 	int ID,ScheCount = 0,ScheIdArr[MAXSCHEDULE];
 	scanf_s("%d", &ID);
-	for (int i = 1; i <= KeyMax; i++)
+	for (auto i = 1; i <= KeyMax; i++)
 	{
-		SCHEDULE *schedule = Schedule_Srv_FetchByID(i);
+		auto *schedule = Schedule_Srv_FetchByID(i);
 		if (schedule->data.play_id == ID)
 		{
 			ScheIdArr[ScheCount] = schedule->data.id;

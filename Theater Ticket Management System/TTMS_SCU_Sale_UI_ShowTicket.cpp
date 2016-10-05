@@ -10,7 +10,7 @@ void Sale_UI_ShowTicket(USER* user)
 	printf_s("请输入查询的演出计划ID:");
 	int ID;
 	scanf_s("%d", &ID);
-	SCHEDULE* schedule = Schedule_Srv_FetchByID(ID);
+	auto *schedule = Schedule_Srv_FetchByID(ID);
 	if (!schedule)
 	{
 		TTMS_GotoXY(50, 24);
@@ -18,14 +18,14 @@ void Sale_UI_ShowTicket(USER* user)
 	}
 	else
 	{
-		for (int i = 11; i < 21; i++)
+		for (auto i = 11; i < 21; i++)
 		{
 			TTMS_GotoXY(30, i);
 			printf_s("*");
 			TTMS_GotoXY(92, i);
 			printf_s("*");
 		}
-		for (int i = 30; i < 92; i++)
+		for (auto i = 30; i < 92; i++)
 		{
 			TTMS_GotoXY(i, 11);
 			printf_s("*");
@@ -37,7 +37,7 @@ void Sale_UI_ShowTicket(USER* user)
 		TTMS_GotoXY(55, 13);
 		printf_s("没人来剧院");
 		TTMS_GotoXY(33, 15);
-		PLAY* play = Play_Srv_FetchByID(schedule->data.play_id);
+		auto *play = Play_Srv_FetchByID(schedule->data.play_id);
 		switch (play->data.type)
 		{
 		case PLAY_TYPE_FLIM: printf_s("电影");
@@ -66,7 +66,7 @@ void Sale_UI_ShowTicket(USER* user)
 		printf_s("观众#");
 		TTMS_GotoXY(33, 17);
 		printf_s("播放地址:");
-		STUDIO* studio = Studio_Srv_FetchByID(schedule->data.studio_id);
+		auto *studio = Studio_Srv_FetchByID(schedule->data.studio_id);
 		printf_s("%s演出厅", studio->data.name);
 		TTMS_GotoXY(70, 17);
 		printf_s("全片时长:%d分钟", play->data.duration);

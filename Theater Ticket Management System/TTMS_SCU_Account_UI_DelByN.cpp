@@ -14,7 +14,7 @@ void Account_UI_DeleteByName(USER * Admini)
 	TTMS_GotoXY(54, 11);
 	char delname[USER_LEN];
 	scanf_s("%s",delname,USER_LEN);
-	if (USER *user = Account_Perst_FetchByName(delname))
+	if (auto *user = Account_Perst_FetchByName(delname))
 	{
 		TTMS_GotoXY(47, 13);
 		printf_s("ÐÕÃû:%s", user->USER_NAME);

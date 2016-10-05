@@ -5,7 +5,7 @@ int Ticket_Perst_Insert(TICKET * ticket)
 {
 	FILE *fp;
 	errno_t err;
-	if (err = fopen_s(&fp, "Ticket.dat", "ab+") != 0)
+	if ((err = fopen_s(&fp, "Ticket.dat", "ab+") != 0))
 	{
 		TTMS_GotoXY(55, 3);
 		printf_s("File Code:%d error!", err);

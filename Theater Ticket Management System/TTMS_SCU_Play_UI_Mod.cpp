@@ -10,7 +10,7 @@ void Play_UI_Mod(USER * user)
 	printf_s("请输入要修改的ID:");
 	int ID;
 	scanf_s("%d", &ID);
-	PLAY *play = Play_Srv_FetchByID(ID);
+	auto play = Play_Srv_FetchByID(ID);
 	if (play)
 	{
 		BIOS_GOTO_BOX(22, 100, 23, 22);
@@ -93,8 +93,8 @@ void Play_UI_Mod(USER * user)
 			strcpy_s(play->data.area, 31, NewArea);
 			play->data.duration = NewDuration;
 			play->data.price = NewPrice;
-			play->data.type = (play_type_t)NewType;
-			play->data.rating = (play_rating_t)NewRating;
+			play->data.type = static_cast<play_type_t>(NewType);
+			play->data.rating = static_cast<play_rating_t>(NewRating);
 		}
 		TTMS_GotoXY(35, 24);
 		printf_s("                                                       ");

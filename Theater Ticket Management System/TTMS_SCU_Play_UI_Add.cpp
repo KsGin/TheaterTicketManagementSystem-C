@@ -7,7 +7,7 @@ void Play_UI_Add(USER* user)
 	BIOS_GOTO_BOX(22, 100, 5, 25);
 	BIOS_GOTO_BOX(22, 100, 8, 7);
 	PLAY* Play_add;
-	Play_add = (PLAY *)malloc(sizeof(PLAY));
+	Play_add = static_cast<PLAY *>(malloc(sizeof(PLAY)));
 	TTMS_GotoXY(52, 6);
 	printf_s("增加剧目信息");
 	TTMS_GotoXY(47, 9);

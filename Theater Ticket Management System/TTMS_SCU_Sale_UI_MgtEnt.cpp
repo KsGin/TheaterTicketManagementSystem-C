@@ -11,7 +11,7 @@ void Sale_UI_Mgt_Entry(USER * user)
 	}
 	TTMS_GotoXY(43, 27);
 	printf_s("请输入交易类型(售票 = 1,退票 = 0):");
-	int chiose = (int)(_getch()- 48);
+	auto chiose = static_cast<int>(_getch() - 48);
 	if (chiose == 1)
 	{
 		system("cls");
@@ -32,7 +32,7 @@ void Sale_UI_Mgt_Entry(USER * user)
 		scanf_s("%d", &SeatRowCount);
 		TTMS_GotoXY(57, 13);
 		scanf_s("%d", &SeatColCount);
-		SCHEDULE *schedule = Schedule_Srv_FetchByID(ScheduleID);
+		auto *schedule = Schedule_Srv_FetchByID(ScheduleID);
 		if (!schedule)
 		{
 			TTMS_GotoXY(52, 24);
@@ -41,7 +41,7 @@ void Sale_UI_Mgt_Entry(USER * user)
 			Sale_UI_Mgt_Entry(user);
 		}
 		TICKET *ticket;
-		int seat_id = Seat_Perst_FetchByRC(SeatRowCount, SeatColCount, schedule->data.studio_id);
+		auto seat_id = Seat_Perst_FetchByRC(SeatRowCount, SeatColCount, schedule->data.studio_id);
 		if (!seat_id)
 		{
 			TTMS_GotoXY(52, 24);
@@ -49,7 +49,8 @@ void Sale_UI_Mgt_Entry(USER * user)
 			_getch();
 			Sale_UI_Mgt_Entry(user);
 		}
-		ticket = (TICKET*)malloc(sizeof(TICKET));
+		// ReSharper disable once CppNonReclaimedResourceAcquisition
+		ticket = static_cast<TICKET*>(malloc(sizeof(TICKET)));
 		ticket->data.id = Ticket_Perst_FetchBySS(ScheduleID, seat_id);
 		ticket = Ticket_Perst_FetchByID(ticket->data.id);
 	//	printf_s("%d    ", ticket->data.id);
@@ -109,7 +110,7 @@ void Sale_UI_Mgt_Entry(USER * user)
 		scanf_s("%d", &SeatRowCount);
 		TTMS_GotoXY(57, 13);
 		scanf_s("%d", &SeatColCount);
-		SCHEDULE *schedule = Schedule_Srv_FetchByID(ScheduleID);
+		auto *schedule = Schedule_Srv_FetchByID(ScheduleID);
 		if (!schedule)
 		{
 			TTMS_GotoXY(52, 24);
@@ -118,7 +119,7 @@ void Sale_UI_Mgt_Entry(USER * user)
 			Sale_UI_Mgt_Entry(user);
 		}
 		TICKET *ticket;
-		int seat_id = Seat_Perst_FetchByRC(SeatRowCount, SeatColCount, schedule->data.studio_id);
+		auto seat_id = Seat_Perst_FetchByRC(SeatRowCount, SeatColCount, schedule->data.studio_id);
 		if (!seat_id)
 		{
 			TTMS_GotoXY(52, 24);
@@ -126,7 +127,9 @@ void Sale_UI_Mgt_Entry(USER * user)
 			_getch();
 			Sale_UI_Mgt_Entry(user);
 		}
-		ticket = (TICKET*)malloc(sizeof(TICKET));
+		// ReSharper disable CppNonReclaimedResourceAcquisition
+		ticket = static_cast<TICKET*>(malloc(sizeof(TICKET)));
+		// ReSharper restore CppNonReclaimedResourceAcquisition
 		ticket->data.id = Ticket_Perst_FetchBySS(ScheduleID, seat_id);
 	//	printf_s("%d", ticket->data.id);
 		ticket = Ticket_Perst_FetchByID(ticket->data.id);

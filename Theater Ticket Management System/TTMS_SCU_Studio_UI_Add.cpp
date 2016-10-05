@@ -7,7 +7,7 @@ void Studio_UI_add(USER *user)
 	BIOS_GOTO_BOX(22,100,5,25);
 	BIOS_GOTO_BOX(22, 100, 8, 7);
 	STUDIO *studio_add;
-	studio_add = (STUDIO *)malloc(sizeof(STUDIO));
+	studio_add = static_cast<STUDIO *>(malloc(sizeof(STUDIO)));
 	TTMS_GotoXY(52, 6);
 	printf_s("Ôö¼ÓÑÝ³öÌü");
 	TTMS_GotoXY(47, 9);

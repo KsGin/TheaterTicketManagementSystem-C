@@ -29,14 +29,13 @@ void SysLogin()
 	}
 	else
 	{
-		int count = 1;
-		int flag = Account_Srv_Verify(useraccount, userpassword);
+		auto count = 1;
+		auto flag = Account_Srv_Verify(useraccount, userpassword);
 		while(count <= 3)
 		{
-			int flag = Account_Srv_Verify(useraccount, userpassword);
-			if (flag == 1)
+			if (Account_Srv_Verify(useraccount , userpassword))
 			{
-				USER *user = Account_Perst_FetchByAccount(useraccount);
+				auto user = Account_Perst_FetchByAccount(useraccount);
 				TTMS_GotoXY(55, 20);
 				printf_s("µÇÂ½³É¹¦");
 				TTMS_GotoXY(52, 22);

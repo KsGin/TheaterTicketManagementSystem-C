@@ -5,7 +5,7 @@ int Account_Perst_DelByName(char name[])
 {
 	FILE *fp, *tempfp;
 	USER *temp;
-	temp = (USER *)malloc(sizeof(USER));
+	temp = static_cast<USER *>(malloc(sizeof(USER)));
 	fopen_s(&fp, "Account.dat", "rb");
 	fopen_s(&tempfp, "Accounttemp.dat", "wb");
 	fseek(fp, 0, SEEK_END);

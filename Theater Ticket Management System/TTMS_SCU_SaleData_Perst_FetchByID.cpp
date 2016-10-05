@@ -6,7 +6,7 @@ SALE * SaleData_Perst_FetchByID(int ID)
 	FILE *fp;
 	errno_t err;
 	SALE *SaleData_temp;
-	if (err = fopen_s(&fp, "Sale.dat", "rb") != 0)
+	if ((err = fopen_s(&fp, "Sale.dat", "rb") != 0))
 	{
 		return nullptr;
 	}
@@ -21,7 +21,7 @@ SALE * SaleData_Perst_FetchByID(int ID)
 		fseek(fp, 0, SEEK_SET);
 		while (!feof(fp))
 		{
-			SaleData_temp = (SALE *)malloc(sizeof(SALE));
+			SaleData_temp = static_cast<SALE *>(malloc(sizeof(SALE)));
 			fread_s(SaleData_temp, sizeof(SALE), sizeof(SALE), 1, fp);
 			if (SaleData_temp->data.id == ID)
 			{

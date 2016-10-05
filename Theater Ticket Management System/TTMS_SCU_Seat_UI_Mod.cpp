@@ -10,7 +10,7 @@ void Seat_UI_Mod(USER * user)
 	printf_s("请输入要修改的ID:");
 	int ID;
 	scanf_s("%d", &ID);
-	SEAT *seat = Seat_Srv_FetchByID(ID);
+	auto seat = Seat_Srv_FetchByID(ID);
 	if (seat)
 	{
 		int NewStatus;
@@ -45,7 +45,7 @@ void Seat_UI_Mod(USER * user)
 		}
 		else
 		{
-			seat->data.status = (SEAT_STATUS)NewStatus;
+			seat->data.status = static_cast<SEAT_STATUS>(NewStatus);
 		}
 		TTMS_GotoXY(50, 23);
 		printf_s("Enter确认修改，Esc取消");

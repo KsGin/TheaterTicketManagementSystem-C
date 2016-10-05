@@ -6,7 +6,7 @@ int EntKeyPlay_Perst_CompNewKeys()
 	FILE *fp;
 	int key;
 	errno_t err;
-	if (err = fopen_s(&fp, "EntityKeyPlay.dat", "r") == 0) {
+	if ((err = fopen_s(&fp, "EntityKeyPlay.dat", "r") == 0)) {
 		fseek(fp, 0, SEEK_END);
 		if (ftell(fp) == 0)
 		{

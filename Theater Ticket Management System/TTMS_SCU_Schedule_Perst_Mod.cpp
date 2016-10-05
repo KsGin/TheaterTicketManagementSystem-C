@@ -7,7 +7,7 @@ int Schedule_Perst_Mod(SCHEDULE * schedule)
 	SCHEDULE *temp;
 	fopen_s(&fp, "Schedule.dat", "rb");
 	fopen_s(&tempfp, "Scheduletemp.dat", "wb");
-	temp = (SCHEDULE *)malloc(sizeof(SCHEDULE));
+	temp = static_cast<SCHEDULE *>(malloc(sizeof(SCHEDULE)));
 	while (!feof(fp))
 	{
 		fread_s(temp, sizeof(SCHEDULE), sizeof(SCHEDULE), 1, fp);
