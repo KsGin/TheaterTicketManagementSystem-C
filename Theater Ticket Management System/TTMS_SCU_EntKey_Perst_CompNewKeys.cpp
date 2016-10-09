@@ -19,7 +19,8 @@ int EntKey_Perst_CompNewKeys()
 		fclose(fp);
 		return key;
 	}
-	else {
+	else
+	{
 		fopen_s(&fp, "EntityKey.dat", "w");
 		fprintf_s(fp, "%d", 0);
 		fclose(fp);

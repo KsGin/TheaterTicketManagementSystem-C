@@ -9,7 +9,7 @@ void Main_UI_MgtEntry(USER * user)
 	TTMS_GotoXY(53, 6);
 	printf_s("欢迎回来,%s", user->USER_NAME);
 	TTMS_GotoXY(45, 24);
-	printf_s("按UP/DOWN选择,ENTER确认,ESC注销登录");
+	printf_s("按UP/DOWN选择,ENTER确认,ESC返回上一层");
 	BIOS_GOTO_BOX(22, 100, 23, 22);
 	if (user->power == 0)
 	{
